@@ -1,0 +1,241 @@
+                * {
+                    box-sizing: border-box;
+                }
+                /* Begin burger Menu */
+                
+                input {
+                    display: none;
+                }
+                
+                label {
+                    color: #4b4b4b;
+                    cursor: pointer;
+                    float: right;
+                    font-size: 3rem;
+                    padding: 1rem;
+                    transition: all .15s ease;
+                }
+                
+                input:checked+label {
+                    color: #4b4b4b;
+                }
+                
+                nav {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: all .15s ease;
+                }
+                
+                input:checked~nav {
+                    max-height: 50rem;
+                }
+                
+                li:last-child {
+                    border-bottom: 0;
+                }
+                
+                li>a {
+                    color: #ccb884;
+                    display: block;
+                    font-family: 'Heebo', sans-serif;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    letter-spacing: 0.1rem;
+                    padding: 1.5rem;
+                    text-align: right;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+                /* End burger menu */
+                
+                html {
+                    font-size: 10px;
+                }
+                
+                section,
+                aside {
+                    padding: 5rem 2rem;
+                    position: relative;
+                }
+                
+                section>a,
+                aside>a {
+                    display: block;
+                }
+                
+                span {
+                    display: block;
+                }
+                
+                img {
+                    padding: 2rem 0;
+                }
+                
+                i {
+                    background: #ccb884;
+                    border-radius: 50%;
+                    color: #ffffff;
+                    font-size: 2rem;
+                    height: 4rem;
+                    margin: .75rem;
+                    padding: 1rem;
+                    text-align: center;
+                    width: 4rem;
+                }
+                
+                strong {
+                    font-weight: 500;
+                }
+                
+                .heading-1,
+                .heading-2,
+                .heading-3,
+                .heading-4,
+                .heading-5 {
+                    color: #4b4b4b;
+                    font-family: 'Spartan', sans-serif;
+                    letter-spacing: 0.2rem;
+                    line-height: 1.3em;
+                    padding-bottom: 2rem;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+                
+                p,
+                .subtitle,
+                .caption {
+                    color: #4b4b4b;
+                    font-family: 'Heebo', sans-serif;
+                    font-weight: 300;
+                    line-height: 1.4em;
+                    padding-bottom: 2rem;
+                }
+                
+                .heading-1 {
+                    font-size: 3.6rem;
+                }
+                
+                .heading-2 {
+                    font-size: 3.2rem;
+                }
+                
+                .heading-3 {
+                    font-size: 2.8rem;
+                }
+                
+                .heading-4 {
+                    font-size: 2.4rem;
+                }
+                
+                .heading-5 {
+                    font-size: 2rem;
+                }
+                
+                .subtitle {
+                    font-size: 1.8rem;
+                    text-transform: uppercase;
+                }
+                
+                p {
+                    font-size: 1.8rem;
+                }
+                
+                .caption {
+                    font-size: 1.6rem;
+                }
+                
+                .divider {
+                    border-top: 2px solid #ccb884;
+                    margin-bottom: 3rem;
+                    width: 50%;
+                }
+                
+                .center {
+                    text-align: center;
+                }
+                
+                .left {
+                    text-align: left;
+                }
+                
+                .container {
+                    background-color: white;
+                    /* border: 1px solid black; */
+                    margin: 3rem auto;
+                    width: 100%;
+                }
+                
+                .flex-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-end;
+                    padding: 0 2rem;
+                    width: 100%;
+                }
+                
+                .logo {
+                    display: inline-block;
+                }
+                
+                .menu-link {
+                    color: #4b4b4b;
+                    flex-grow: 1;
+                    font-family: 'Heebo', sans-serif;
+                    font-weight: 300;
+                    font-size: 1.8rem;
+                    text-align: center;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+                
+                footer {
+                    display: flex;
+                    justify-content: flex-end;
+                    padding: 2rem;
+                }
+                
+                .hero {
+                    background-color: white;
+                }
+                
+                .projects {
+                    background-color: #ECF2EF;
+                }
+                /* .parallelogram {
+    width: 150px;
+    height: 100px;
+    transform: skew(20deg);
+    background: red;
+} */
+                
+                .see-more {
+                    background-color: white;
+                }
+                
+                .contact {
+                    background-color: #F2EDE0;
+                }
+                
+                .button-primary {
+                    background-color: #ccb884;
+                    color: #4b4b4b;
+                    font-family: 'Heebo', sans-serif;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    padding: 1.5rem;
+                    text-align: center;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+                
+                .button-secondary {
+                    border: 2px solid #ccb884;
+                    color: #4b4b4b;
+                    font-family: 'Heebo', sans-serif;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    padding: 1.5rem;
+                    text-align: center;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
