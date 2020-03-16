@@ -7,80 +7,88 @@
     <title>Amanda Decker Garcia &vert; Portfolio Home</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;500&family=Spartan:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2d56692aba.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <img src="/logo.png" alt="Personal Brand Logo" />
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="project.html">Work</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
 
-    <main>
-        <!-- Hero -->
-        <section>
-            <h1>
-                <span>Hi! My name is</span>
-                <span>Amanda Decker Garcia</span>
-            </h1>
-            <p>
-                <span>
-                I'm a <strong>digital product designer</strong> ready to solve your problems with simple, inclusive design.
-            </span>
-                <span>Based in Raleigh, NC</span>
-            </p>
-        </section>
+        <!-- Nav bar -->
+        <header class="logo flex-container">
+            <img src="/img/logo.png" alt="Personal Brand Logo" />
 
-        <!-- Featured Projects -->
-        <section>
-            <h1>Featured Projects</h1>
-            <img src="/cirrus.png" alt="Cirrus Home Page">
-            <h2>Cirrus</h2>
-            <h3>UX/UI Design, Branding</h3>
-            <p>Cirrus connects your cloud drives to simplify finding your documents when you need them.</p>
+            <input type="checkbox" id="toggle">
+            <label for="toggle">&#9776;</label>
 
-            <a href="project.html">Case Study</a>
-        </section>
+            <nav>
+                <ul>
+                    <li class="menu-link">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="project.html">Work</a>
+                    </li>
+                    <li class="menu-link">
+                        <a href="about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-        <!-- View more case studies button -->
-        <aside>
-            <a href="#">See More Work</a>
-        </aside>
+        <main>
+            <!-- Hero -->
+            <section class="hero">
+                <h1 class="center">
+                    <span class="subtitle">Hi! My name is</span>
+                    <span class="heading-1">Amanda Decker Garcia</span>
+                </h1>
+                <p class="center">I'm a <strong>digital product designer</strong> ready to solve your problems with simple, inclusive design.</p>
+                <p class="subtitle center">Based in Raleigh, NC</p>
 
-        <!-- Contact section -->
-        <section>
-            <h1>Say Hello</h1>
-            <p>Whether you want to work together or just grab a cup of coffee, I'd love to hear from you.</p>
-            <p>Say hi at <strong>amanda.decker@gmail.com</strong></p>
-        </section>
-    </main>
+            </section>
 
-    <footer>
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/adeckergarcia/">
-            <img src="/linkedin.png" alt="LinkedIn">
-        </a>
-        <!-- Dribbble -->
-        <a href="https://dribbble.com/adeckergarcia">
-            <img src="/dribbble.png" alt="Dribble">
-        </a>
-        <!-- Twitter -->
-        <a href="https://twitter.com/adeckergarcia">
-            <img src="/twitter.png" alt="Twitter">
-        </a>
-    </footer>
+            <!-- Featured Projects -->
+            <section class="projects">
+                <h1 class="heading-4">Featured Projects</h1>
+                <hr class="divider">
+                <img src="/img/cirrus.png" alt="Cirrus Home Page">
+                <h2 class="heading-5 left">Cirrus</h2>
+                <h3 class="subtitle">UX/UI Design, Branding</h3>
+                <p>Cirrus connects your cloud drives to simplify finding your documents when you need them.</p>
 
+                <a class="button-primary" href="project.html">Case Study</a>
+            </section>
+
+            <!-- View more case studies button -->
+            <aside class="see-more">
+                <a class="button-secondary" href="#">See More Work</a>
+            </aside>
+
+            <!-- Contact section -->
+            <section class="contact">
+                <h1 class="heading-4">Say Hello</h1>
+                <hr class="divider">
+                <p>Whether you want to work together or just grab a cup of coffee, I'd love to hear from you.</p>
+                <p>Say hi at <strong>amanda.decker@gmail.com</strong></p>
+            </section>
+        </main>
+
+        <footer>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/adeckergarcia/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <!-- Dribbble -->
+            <a href="https://dribbble.com/adeckergarcia" target="_blank">
+                <i class="fab fa-dribbble"></i>
+            </a>
+            <!-- Twitter -->
+            <a href="https://twitter.com/adeckergarcia" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </footer>
+    </div>
 </body>
 
 </html>
