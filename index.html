@@ -11,11 +11,11 @@
     <script src="https://kit.fontawesome.com/2d56692aba.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="text-gray">
     <div class="container">
 
         <!-- Nav bar -->
-        <header class="logo flex-container">
+        <!-- <header>
             <img src="/img/logo.png" alt="Personal Brand Logo" />
 
             <input type="checkbox" id="toggle">
@@ -34,11 +34,32 @@
                     </li>
                 </ul>
             </nav>
+        </header> -->
+
+        <header>
+            <nav>
+                <div class="side-padding navbar flex-row align-items-center space-between-items">
+                    <img class="brand-logo" src="img/brand/logo.png" alt="Personal Brand Logo">
+                    <button class="burger-menu-icon text-gray" aria-label="Navigation menu links" id="burger-menu">&#9776;</button>
+                </div>
+                <ul class="side-padding flex-column align-items-right space-evenly menu-links-closed" id="menu-link-wrapper">
+                    <li>
+                        <a class="menu-link text-gray" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="menu-link text-gray" href="project.html">Work</a>
+                    </li>
+                    <li>
+                        <a class="menu-link text-gray" href="about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
+
 
         <main>
             <!-- Hero -->
-            <section class="hero">
+            <section class="hero diagonal">
                 <h1 class="center">
                     <span class="subtitle">Hi! My name is</span>
                     <span class="heading-1">Amanda Decker Garcia</span>
@@ -49,10 +70,10 @@
             </section>
 
             <!-- Featured Projects -->
-            <section class="projects">
+            <section class="projects diagonal">
                 <h1 class="heading-4">Featured Projects</h1>
                 <hr class="divider">
-                <img src="/img/cirrus.png" alt="Cirrus Home Page">
+                <!-- <img src="img/projects/cirrus/cirrus.png" alt="Cirrus Home Page"> -->
                 <h2 class="heading-5 left">Cirrus</h2>
                 <h3 class="subtitle">UX/UI Design, Branding</h3>
                 <p>Cirrus connects your cloud drives to simplify finding your documents when you need them.</p>
@@ -61,12 +82,12 @@
             </section>
 
             <!-- View more case studies button -->
-            <aside class="see-more">
+            <aside class="see-more diagonal">
                 <a class="button-secondary" href="#">See More Work</a>
             </aside>
 
             <!-- Contact section -->
-            <section class="contact">
+            <section class="contact diagonal">
                 <h1 class="heading-4">Say Hello</h1>
                 <hr class="divider">
                 <p>Whether you want to work together or just grab a cup of coffee, I'd love to hear from you.</p>
@@ -89,6 +110,8 @@
             </a>
         </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
