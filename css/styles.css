@@ -3,13 +3,6 @@
 }
 
 
-/* .container {
-    background-color: white;
-    margin: 3rem auto;
-    width: 100%;
-} */
-
-
 /* Header area */
 
 .flex-row {
@@ -81,29 +74,6 @@
     text-decoration: none;
     text-transform: uppercase;
 }
-
-
-/* .menu-link {
-    text-align: center;
-    text-transform: uppercase;
-} */
-
-
-/* Begin burger Menu */
-
-
-/* nav {
-max-height: 0;
-overflow: hidden;
-transition: all .15s ease;
-}
-
-input:checked~nav {
-max-height: 50rem;
-}  */
-
-
-/* End burger menu */
 
 html,
 body {
@@ -199,19 +169,6 @@ p {
 .left {
     text-align: left;
 }
-
-
-/* .flex-container {
-background-color: green;
-display: flex;
-justify-content: space-between;
-padding: 0 2rem;
-} */
-
-
-/* .logo {
-display: flex;
-} */
 
 
 /* .diagonal-bg {
