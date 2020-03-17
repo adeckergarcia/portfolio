@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+.container {
+    margin: 2rem auto;
+    width: 100%;
+}
+
 
 /* Header area */
 
@@ -21,7 +26,8 @@
 }
 
 .menu-links-open {
-    height: 12.5rem;
+    height: 18rem;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .menu-links-closed {
@@ -63,6 +69,10 @@
     border: 0;
 }
 
+button {
+    background-color: transparent;
+}
+
 .text-gray {
     color: #4b4b4b;
 }
@@ -73,6 +83,10 @@
     letter-spacing: .2rem;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.spartan {
+    font-family: 'Spartan', sans-serif;
 }
 
 html,
@@ -171,6 +185,69 @@ p {
 }
 
 
+/**
+ * How to make skewed bg illusion
+ *
+ * 1. In `html` file, above a `section`, add:
+ * ```html
+ * <div class="skewed-bg-wrapper">
+ *     <div class="skewed-bg skewed-bg-<section specific>"></div>
+ * </div>
+ * ```
+ *
+ * 2. 
+ */
+
+.skewed-bg-wrapper {
+    position: relative;
+    height: 0;
+    overflow: visible;
+}
+
+.skewed-bg {
+    position: absolute;
+    width: 200vh;
+    transform: matrix(1, -.08, 0, 1, -15, 0);
+    z-index: -1;
+}
+
+
+/* Specific to projects */
+
+.skewed-bg-projects {
+    height: 510px;
+    background-color: #ECF2EF;
+}
+
+.skewed-bg-projects-padding {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    margin-top: 6rem;
+    margin-bottom: 12rem;
+}
+
+
+/* Specific to contact */
+
+.skewed-bg-contact {
+    height: 510px;
+    /* ^ change */
+    background-color: #ECF2EF;
+    /* ^ change */
+}
+
+.skewed-bg-contact-padding {
+    padding-top: 7.5rem;
+    /* ^ change */
+    padding-bottom: 7.5rem;
+    /* ^ change */
+    margin-top: 6rem;
+    /* ^ change */
+    margin-bottom: 12rem;
+    /* ^ change */
+}
+
+
 /* .diagonal-bg {
 position: absolute;
 top: 0;
@@ -209,15 +286,15 @@ transform: skew(10deg, -10deg);
 } */
 
 .hero {
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .projects {
-    background-color: #ECF2EF;
+    /* background-color: #ECF2EF; */
 }
 
 .see-more {
-    background-color: white;
+    /* background-color: white; */
 }
 
 .contact {
