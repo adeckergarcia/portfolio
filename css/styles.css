@@ -34,6 +34,31 @@
     height: 0;
 }
 
+.navbar {
+    height: 6.4rem;
+}
+
+.brand-logo {
+    width: 3.6rem;
+}
+
+.burger-menu-icon {
+    font-size: 3.6rem;
+    cursor: pointer;
+    border: 0;
+}
+
+.menu-link {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+/* Positioning */
+
 .align-items-center {
     align-items: center;
 }
@@ -50,39 +75,49 @@
     justify-content: space-evenly;
 }
 
+.flex-end {
+    justify-content: flex-end;
+}
+
+section,
+aside {
+    /* position: relative; */
+}
+
+section>a,
+aside>a {
+    display: block;
+}
+
+span {
+    display: block;
+}
+
+
+/* Spacing */
+
 .side-padding {
     padding-left: 2rem;
     padding-right: 2rem;
 }
 
-.navbar {
-    height: 6.4rem;
+.bottom-padding {
+    padding-bottom: 6rem;
 }
 
-.brand-logo {
-    width: 3.6rem;
-}
-
-.burger-menu-icon {
-    font-size: 3.6rem;
-    cursor: pointer;
-    border: 0;
+.top-padding {
+    padding-top: 6rem;
 }
 
 button {
     background-color: transparent;
 }
 
+
+/* Text */
+
 .text-gray {
     color: #4b4b4b;
-}
-
-.menu-link {
-    font-size: 1.8rem;
-    font-weight: 500;
-    letter-spacing: .2rem;
-    text-decoration: none;
-    text-transform: uppercase;
 }
 
 .spartan {
@@ -97,21 +132,6 @@ body {
     line-height: 1.4em;
 }
 
-section,
-aside {
-    padding: 5rem 2rem;
-    position: relative;
-}
-
-section>a,
-aside>a {
-    display: block;
-}
-
-span {
-    display: block;
-}
-
 strong {
     font-weight: 500;
 }
@@ -124,7 +144,7 @@ strong {
     font-family: 'Spartan', sans-serif;
     letter-spacing: 0.2rem;
     line-height: 1.3em;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     text-align: center;
     text-transform: uppercase;
 }
@@ -135,6 +155,7 @@ p,
     font-family: 'Heebo', sans-serif;
     font-weight: 300;
     line-height: 1.4em;
+    padding-bottom: 2rem;
 }
 
 .heading-1 {
@@ -170,33 +191,35 @@ p {
     font-size: 1.6rem;
 }
 
-.divider {
-    border-top: 2px solid #ccb884;
-    margin-bottom: 3rem;
-    width: 50%;
-}
-
-.center {
+.center-text {
     text-align: center;
 }
 
-.left {
+.left-text {
     text-align: left;
 }
 
 
-/**
- * How to make skewed bg illusion
- *
- * 1. In `html` file, above a `section`, add:
- * ```html
- * <div class="skewed-bg-wrapper">
- *     <div class="skewed-bg skewed-bg-<section specific>"></div>
- * </div>
- * ```
- *
- * 2. 
- */
+/* Images */
+
+.image-width {
+    display: block;
+    max-width: 85vw;
+    margin: 2rem auto;
+}
+
+
+/* Decoration */
+
+.divider {
+    border-top: 2px solid #ccb884;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    width: 50%;
+}
+
+
+/* Background - All Sections */
 
 .skewed-bg-wrapper {
     position: relative;
@@ -206,142 +229,68 @@ p {
 
 .skewed-bg {
     position: absolute;
-    width: 200vh;
+    width: 200vw;
     transform: matrix(1, -.08, 0, 1, -15, 0);
     z-index: -1;
 }
 
 
-/* Specific to projects */
+/* Background Section - Sage */
 
-.skewed-bg-projects {
-    height: 510px;
+.skewed-bg-sage {
+    height: 80rem;
     background-color: #ECF2EF;
 }
 
-.skewed-bg-projects-padding {
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
+.skewed-bg-sage-padding {
+    padding-top: 4.5rem;
+    padding-bottom: 6rem;
     margin-top: 6rem;
     margin-bottom: 12rem;
 }
 
 
-/* Specific to contact */
+/* Background Section - Gold */
 
-.skewed-bg-contact {
-    height: 510px;
-    /* ^ change */
-    background-color: #ECF2EF;
-    /* ^ change */
-}
-
-.skewed-bg-contact-padding {
-    padding-top: 7.5rem;
-    /* ^ change */
-    padding-bottom: 7.5rem;
-    /* ^ change */
-    margin-top: 6rem;
-    /* ^ change */
-    margin-bottom: 12rem;
-    /* ^ change */
-}
-
-
-/* .diagonal-bg {
-position: absolute;
-top: 0;
-bottom: 0;
-right: 0;
-left: 0;
-margin: 5rem 0;
-width: 100%;
-height: 100%;
-background-image: linear-gradient(#ff9d2f, #ff6126);
-transform: skewY(-10deg);
-transform-origin: top left;
-z-index: 0;
-} */
-
-
-/* section::before {
-content: "";
-position: absolute;
-bottom: 0;
-width: 100%;
-height: 100px;
-background: url(divider.svg);
-} */
-
-
-/* .parallelogram {
-background-image: linear-gradient(red, blue);
-height: 20rem;
-transform: skewY(-10deg);
-} */
-
-
-/* .diagonal {
-transform: skew(10deg, -10deg);
-} */
-
-.hero {
-    /* background-color: #fff; */
-}
-
-.projects {
-    /* background-color: #ECF2EF; */
-}
-
-.see-more {
-    /* background-color: white; */
-}
-
-.contact {
+.skewed-bg-gold {
+    height: 40rem;
     background-color: #F2EDE0;
 }
 
-.button-primary {
-    background-color: #ccb884;
-    color: #4b4b4b;
-    font-family: 'Heebo', sans-serif;
+.skewed-bg-gold-padding {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+/* Buttons */
+
+.button {
     font-size: 1.6rem;
     font-weight: 500;
     padding: 1.5rem;
-    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.button-secondary {
+.primary {
+    background-color: #ccb884;
+}
+
+.secondary {
     border: 2px solid #ccb884;
-    color: #4b4b4b;
-    font-family: 'Heebo', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 500;
-    padding: 1.5rem;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
 }
 
 
 /* Footer section */
 
-footer {
-    display: flex;
-    justify-content: flex-end;
-    padding: 2rem;
-}
-
-i {
+.styled-social-icon {
     background: #ccb884;
     border-radius: 50%;
     color: #ffffff;
     font-size: 2rem;
-    height: 4rem;
     margin: .75rem;
     padding: 1rem;
-    text-align: center;
-    width: 4rem;
 }
