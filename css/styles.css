@@ -81,7 +81,7 @@
 
 section,
 aside {
-    /* position: relative; */
+    position: relative;
 }
 
 section>a,
@@ -101,16 +101,22 @@ span {
     padding-right: 2rem;
 }
 
-.bottom-padding {
-    padding-bottom: 6rem;
-}
 
-.top-padding {
+/* .bottom-padding {
+    padding-bottom: 6rem;
+} */
+
+
+/* .top-padding {
     padding-top: 6rem;
-}
+} */
 
 button {
     background-color: transparent;
+}
+
+.extra-top-margin {
+    margin-top: 5rem;
 }
 
 
@@ -176,6 +182,7 @@ p,
 
 .heading-5 {
     font-size: 2rem;
+    text-align: left;
 }
 
 .subtitle {
@@ -189,6 +196,7 @@ p {
 
 .caption {
     font-size: 1.6rem;
+    text-align: center;
 }
 
 .center-text {
@@ -199,10 +207,12 @@ p {
     text-align: left;
 }
 
+.text-list {
+    font-size: 1.8rem;
+    line-height: 1.4em;
+}
 
-/* Images */
-
-.image-width {
+img {
     display: block;
     max-width: 85vw;
     margin: 2rem auto;
@@ -218,50 +228,44 @@ p {
     width: 50%;
 }
 
+.priority-icon {
+    color: #4b4b4b;
+    padding-right: 1rem;
+}
+
 
 /* Background - All Sections */
 
-.skewed-bg-wrapper {
-    position: relative;
-    height: 0;
-    overflow: visible;
+.bg-white {
+    background-color: white;
+    padding: 5rem 0;
+    transform: skewY(-10deg);
 }
 
-.skewed-bg {
-    position: absolute;
-    width: 200vw;
-    transform: matrix(1, -.08, 0, 1, -15, 0);
-    z-index: -1;
-}
-
-
-/* Background Section - Sage */
-
-.skewed-bg-sage {
-    height: 80rem;
+.bg-sage {
     background-color: #ECF2EF;
+    padding: 5rem 0;
+    transform: skewY(-10deg);
 }
 
-.skewed-bg-sage-padding {
-    padding-top: 4.5rem;
-    padding-bottom: 6rem;
-    margin-top: 6rem;
-    margin-bottom: 12rem;
-}
-
-
-/* Background Section - Gold */
-
-.skewed-bg-gold {
-    height: 40rem;
+.bg-gold {
     background-color: #F2EDE0;
+    padding: 5rem 0;
+    transform: skewY(-10deg);
 }
 
-.skewed-bg-gold-padding {
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
+.bg-gray {
+    background-color: black;
+    padding: 6rem 0;
+    transform: skewY(-10deg);
+}
+
+.diagonal-box-content {
+    /* border: 1px solid black; */
+    max-width: 50em;
+    padding: 2rem;
+    margin: 0 auto;
+    transform: skewY(10deg);
 }
 
 
@@ -270,6 +274,7 @@ p {
 .button {
     font-size: 1.6rem;
     font-weight: 500;
+    margin: 2rem 0;
     padding: 1.5rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -281,6 +286,50 @@ p {
 
 .secondary {
     border: 2px solid #ccb884;
+}
+
+.no-border {
+    display: inline;
+    padding: 1.5rem 0;
+    border: 1px solid black;
+}
+
+.arrow {
+    display: inline;
+    /* margin: 0; */
+    width: 3.5rem;
+}
+
+
+/* Scroll to top */
+
+.scroll-top-button {
+    border: 0;
+    background: white;
+    border-radius: 50%;
+    color: #C1D3D9;
+    font-size: 5rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 10;
+}
+
+.scroll-top-button:hover {
+    border: 0;
+    background: white;
+    border-radius: 50%;
+    color: #ccb884;
+    font-size: 5rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 10;
+}
+
+.hide-scroll-button {
+    display: none;
+    transition: ease 1s;
 }
 
 
