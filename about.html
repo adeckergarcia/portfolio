@@ -16,7 +16,9 @@
         <header>
             <nav>
                 <div class="side-padding navbar flex-row align-items-center space-between-items">
-                    <img class="brand-logo" src="img/brand/logo.png" alt="Personal Brand Logo">
+                    <a href="index.html">
+                        <img class="brand-logo" src="img/brand/logo.png" alt="Personal Brand Logo">
+                    </a>
                     <button class="burger-menu-icon text-gray" aria-label="Navigation menu links" id="burger-menu">&#9776;</button>
                 </div>
                 <ul class="side-padding flex-column align-items-right space-evenly menu-links-closed" id="menu-link-wrapper">
@@ -30,7 +32,7 @@
                         <a class="spartan menu-link text-gray" href="about.html">About</a>
                     </li>
                     <li>
-                        <a class="spartan menu-link text-gray" href="mailto:amanda.decker@gmail.com">Contact</a>
+                        <a class="spartan menu-link text-gray" href="mailto:amanda.decker@gmail.com" target="_blank">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -39,7 +41,7 @@
         <section>
             <!-- Title and image -->
             <h1>About Me</h1>
-            <img src="/profile.png" alt="Amanda Garcia">
+            <img src="img/brand/about/profile.png" alt="Amanda Garcia">
             <!-- The Journey color section -->
             <div>
                 <h2>The Journey</h2>
@@ -80,29 +82,44 @@
             </ul>
         </section>
 
-        <footer>
-            <!-- Contact section -->
-            <section class="contact diagonal">
-                <h1 class="heading-4">Say Hello</h1>
-                <hr class="divider">
-                <p>Whether you want to work together or just grab a cup of coffee, I'd love to hear from you.</p>
-                <p>Say hi at <strong>amanda.decker@gmail.com</strong></p>
-            </section>
+        <!-- Start of "footer" - includes contact section -->
 
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/adeckergarcia/" target="_blank">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-            <!-- Dribbble -->
-            <a href="https://dribbble.com/adeckergarcia" target="_blank">
-                <i class="fab fa-dribbble"></i>
-            </a>
-            <!-- Twitter -->
-            <a href="https://twitter.com/adeckergarcia" target="_blank">
-                <i class="fab fa-twitter"></i>
-            </a>
+        <!-- Diagonal section background -->
+        <div class="skewed-bg-wrapper">
+            <div class="skewed-bg skewed-bg-gold"></div>
+        </div>
+
+        <!-- Contact section -->
+        <section class="contact skewed-bg-gold-padding">
+            <h1 class="heading-4">Say Hello</h1>
+            <hr class="divider">
+            <p>Whether you want to work together or just grab a cup of coffee, I'd love to hear from you.</p>
+            <p>Say hi at <strong>amanda.decker@gmail.com</strong></p>
+        </section>
+
+        <footer>
+            <div class="flex-row align-items-right flex-end">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/adeckergarcia/" target="_blank">
+                    <i class="fab fa-linkedin-in styled-social-icon"></i>
+                </a>
+                <!-- Dribbble -->
+                <a href="https://dribbble.com/adeckergarcia" target="_blank">
+                    <i class="fab fa-dribbble styled-social-icon"></i>
+                </a>
+                <!-- Twitter -->
+                <a href="https://twitter.com/adeckergarcia" target="_blank">
+                    <i class="fab fa-twitter styled-social-icon"></i>
+                </a>
+                <!-- Email -->
+                <a href="mailto:amanda.decker@gmail.com" target="_blank">
+                    <i class="fas fa-envelope styled-social-icon"></i>
+                </a>
+            </div>
         </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
