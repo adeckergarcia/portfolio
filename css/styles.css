@@ -48,6 +48,10 @@
     border: 0;
 }
 
+.burger-menu-icon:focus {
+    outline: none;
+}
+
 .menu-link {
     font-size: 1.8rem;
     font-weight: 500;
@@ -101,6 +105,10 @@ span {
     padding-right: 2rem;
 }
 
+.extra-top-margin {
+    margin-top: 5rem;
+}
+
 
 /* .bottom-padding {
     padding-bottom: 6rem;
@@ -111,12 +119,16 @@ span {
     padding-top: 6rem;
 } */
 
-button {
-    background-color: transparent;
+.hanging-indent {
+    margin-left: 4rem;
 }
 
-.extra-top-margin {
-    margin-top: 5rem;
+.white-box {
+    background-color: white;
+    padding-bottom: 20rem;
+    z-index: 1;
+    transform: skewY(-10deg);
+    position: fixed;
 }
 
 
@@ -150,6 +162,7 @@ strong {
     font-family: 'Spartan', sans-serif;
     letter-spacing: 0.2rem;
     line-height: 1.3em;
+    padding-top: 4rem;
     padding-bottom: 1rem;
     text-align: center;
     text-transform: uppercase;
@@ -209,7 +222,7 @@ p {
 
 .text-list {
     font-size: 1.8rem;
-    line-height: 1.4em;
+    line-height: 1.6em;
 }
 
 img {
@@ -230,6 +243,20 @@ img {
 
 .priority-icon {
     color: #4b4b4b;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+
+.bullet {
+    color: #C1D3D9;
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+
+.positive-icon,
+.negative-icon {
+    color: #4b4b4b;
+    font-size: 1.5rem;
     padding-right: 1rem;
 }
 
@@ -240,24 +267,28 @@ img {
     background-color: white;
     padding: 5rem 0;
     transform: skewY(-10deg);
+    z-index: -1;
 }
 
 .bg-sage {
     background-color: #ECF2EF;
     padding: 5rem 0;
     transform: skewY(-10deg);
+    z-index: -1;
 }
 
 .bg-gold {
     background-color: #F2EDE0;
     padding: 5rem 0;
     transform: skewY(-10deg);
+    z-index: -1;
 }
 
 .bg-gray {
-    background-color: black;
+    background-color: #F2F2F2;
     padding: 6rem 0;
     transform: skewY(-10deg);
+    z-index: -1;
 }
 
 .diagonal-box-content {
@@ -271,7 +302,12 @@ img {
 
 /* Buttons */
 
+button {
+    background-color: transparent;
+}
+
 .button {
+    display: block;
     font-size: 1.6rem;
     font-weight: 500;
     margin: 2rem 0;
@@ -305,10 +341,10 @@ img {
 
 .scroll-top-button {
     border: 0;
-    background: white;
+    background: transparent;
     border-radius: 50%;
     color: #C1D3D9;
-    font-size: 5rem;
+    font-size: 4rem;
     position: fixed;
     bottom: 2rem;
     right: 2rem;
@@ -316,15 +352,11 @@ img {
 }
 
 .scroll-top-button:hover {
-    border: 0;
-    background: white;
-    border-radius: 50%;
     color: #ccb884;
-    font-size: 5rem;
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    z-index: 10;
+}
+
+.scroll-top-button:focus {
+    outline: none;
 }
 
 .hide-scroll-button {
