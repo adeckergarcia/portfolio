@@ -40,7 +40,7 @@
 }
 
 .brand-logo {
-    width: 3.6rem;
+    width: 5.6rem;
 }
 
 .burger-menu-icon {
@@ -213,13 +213,15 @@ p {
 .text-list {
     font-size: 1.8rem;
     line-height: 1.8em;
-    margin-bottom: 4rem;
 }
 
 img {
     display: block;
     max-width: 85%;
-    margin: 2rem auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 .hidden {
@@ -306,6 +308,7 @@ img {
 
 .horiz-scroll-image {
     display: inline-block;
+<<<<<<< HEAD
     max-height: 50rem;
     padding-right: 2rem;
     margin: 2rem auto;
@@ -318,6 +321,24 @@ img {
 .comp-logos {
     max-height: 8rem;
     justify-content: flex-start;
+=======
+    /* max-height: 50rem; */
+    padding-right: 2rem;
+    margin: 4rem auto;
+}
+
+.max-height-img {
+    max-height: 75vh;
+}
+
+.comp-logos {
+    max-height: 7rem;
+    justify-content: flex-start;
+}
+
+.fullwidth-img {
+    max-width: 100%;
+>>>>>>> checkpoint-15-9-css-styling
 }
 
 
@@ -332,7 +353,12 @@ button {
     font-size: 1.6rem;
     font-weight: 500;
     margin: 2rem auto;
+<<<<<<< HEAD
     padding: 1.5rem;
+=======
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+>>>>>>> checkpoint-15-9-css-styling
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -346,7 +372,8 @@ button {
 }
 
 .link {
-    padding: 2rem 0;
+    padding-right: 0;
+    padding-left: 0;
     text-decoration: none;
 }
 
