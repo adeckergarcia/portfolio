@@ -308,20 +308,6 @@ img {
 
 .horiz-scroll-image {
     display: inline-block;
-<<<<<<< HEAD
-    max-height: 50rem;
-    padding-right: 2rem;
-    margin: 2rem auto;
-}
-
-.max-height-img {
-    max-height: 45rem;
-}
-
-.comp-logos {
-    max-height: 8rem;
-    justify-content: flex-start;
-=======
     /* max-height: 50rem; */
     padding-right: 2rem;
     margin: 4rem auto;
@@ -338,7 +324,6 @@ img {
 
 .fullwidth-img {
     max-width: 100%;
->>>>>>> checkpoint-15-9-css-styling
 }
 
 
@@ -353,12 +338,10 @@ button {
     font-size: 1.6rem;
     font-weight: 500;
     margin: 2rem auto;
-<<<<<<< HEAD
     padding: 1.5rem;
-=======
     padding-top: 1.5rem;
+    padding-top: 1.75rem;
     padding-bottom: 1.5rem;
->>>>>>> checkpoint-15-9-css-styling
     text-decoration: none;
     text-transform: uppercase;
 }
