@@ -108,7 +108,7 @@ span {
 }
 
 .extra-top-margin {
-    margin-top: 5rem;
+    margin-top: 8rem;
 }
 
 
@@ -294,6 +294,12 @@ img {
     background-color: transparent;
     padding: 6rem 2rem;
     transform: skewY(-6deg);
+    z-index: 5;
+}
+
+.negative-margin {
+    margin-bottom: -24rem;
+    margin-top: -5rem;
 }
 
 .diagonal-box-content {
@@ -326,6 +332,10 @@ img {
 .comp-logos {
     max-height: 7rem;
     justify-content: flex-start;
+}
+
+.remove-left-margin {
+    margin-left: 0;
 }
 
 .fullwidth-img {
