@@ -97,15 +97,25 @@ span {
     display: block;
 }
 
-.horiz-scroll-wrapper {
-    display: flex;
-    overflow-x: auto;
+
+/* Horizontal scrolling */
+
+.horiz-scroll-box {
+    overflow: auto;
     white-space: nowrap;
+    width: 40rem;
 }
 
 .horiz-scroll-image {
     display: inline-block;
+    max-height: 50rem;
     padding-right: 2rem;
+    z-index: 1000;
+}
+
+.max-height-img {
+    max-height: 50rem;
+    padding-right: 0;
 }
 
 
@@ -229,6 +239,10 @@ img {
     display: block;
     max-width: 85%;
     margin: 2rem auto;
+}
+
+.hidden {
+    display: none;
 }
 
 

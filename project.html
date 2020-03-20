@@ -41,8 +41,15 @@
         </header>
 
         <main>
+
+            <!-- Scroll to top button -->
+            <button class="scroll-top-button hide-scroll-button" id="scroll-top-button" aria-label="Back to top">
+                <i class="fas fa-chevron-circle-up"></i>
+            </button>
+
             <!-- Title section -->
             <section class="bg-white">
+                <h1 class="hidden">Cirrus</h1>
                 <div class="diagonal-box-content">
                     <img src="img/projects/cirrus/mobile-home.png" alt="Cirrus Mobile Home Page" />
                 </div>
@@ -265,16 +272,16 @@
 
                     <!-- Dashboard sketches and wireframes -->
                     <h2 class="heading-5">Dashboard &vert; Mobile</h2>
-                    <div class="horiz-scroll-wrapper">
+                    <div class="horiz-scroll-box">
                         <img class="horiz-scroll-image" src="img/projects/cirrus/dash-mobile-sketch.png" alt="Mobile Dashboard Sketch">
                         <img class="horiz-scroll-image" src="img/projects/cirrus/dash-mobile-wireframe.png" alt="Mobile Dashboard Wireframe">
                     </div>
 
                     <!-- Upload sketches and wireframes -->
                     <h2 class="heading-5">Upload File &vert; Mobile</h2>
-                    <div>
-                        <img src="img/projects/cirrus/upload-mobile-sketch.png" alt="Mobile Upload Sketch">
-                        <img src="img/projects/cirrus/upload-mobile-wireframe.png" alt="Mobile Upload Wireframe">
+                    <div class="horiz-scroll-box">
+                        <img class="horiz-scroll-image" src="img/projects/cirrus/upload-mobile-sketch.png" alt="Mobile Upload Sketch">
+                        <img class="horiz-scroll-image" src="img/projects/cirrus/upload-mobile-wireframe.png" alt="Mobile Upload Wireframe">
                     </div>
 
                     <!-- See More button -->
@@ -363,6 +370,7 @@
                         <a class="text-gray" href="https://drive.google.com/file/d/1lXrARNvmqgtnEv_H-2xofmWxFKh6rOLV/view?usp=sharing">See the Style Guide<img class="arrow" src="img/projects/cirrus/arrow.png" alt="Link Arrow" aria-hidden="true">
                         </a>
                     </div>
+                </div>
             </section>
 
             <!-- Visual Design -->
@@ -378,9 +386,9 @@
                 <div class="diagonal-box-content">
                     <!-- Mobile design -->
                     <h1 class="heading-4">Mobile</h1>
-                    <div>
-                        <img src="img/projects/cirrus/dash-mobile-v1.png" alt="Mobile Dashboard High Fidelity Version 1">
-                        <img src="img/projects/cirrus/dash-mobile-wireframe.png" alt="Mobile Dashboard Wireframe">
+                    <div class="horiz-scroll-box">
+                        <img class="horiz-scroll-image" src="img/projects/cirrus/dash-mobile-v1.png" alt="Mobile Dashboard High Fidelity Version 1">
+                        <img class="horiz-scroll-image" src="img/projects/cirrus/dash-mobile-wireframe.png" alt="Mobile Dashboard Wireframe">
                     </div>
                     <p>The new user dashboard shows the user which cloud drives they have connected and gives them an easy way to add more. The new tab bar navigation allows them to easily switch back and forth between the Dashboard and All Files view.</p>
 
@@ -410,16 +418,16 @@
                     <p>There were some components where I considered multiple designs, so I chose to let the users decide with preference testing.</p>
 
                     <!-- Burger Menu horizontal scroll section -->
-                    <div>
-                        <img src="img/projects/cirrus/burger-coral.png" alt="Burger Menu on Mobile with Coral Theme">
-                        <img src="img/projects/cirrus/burger-lav.png" alt="Burger Menu on Mobile with Lavender Theme">
+                    <div class="horiz-scroll-box">
+                        <img class="horiz-scroll-image" src="img/projects/cirrus/burger-coral.png" alt="Burger Menu on Mobile with Coral Theme">
+                        <img class="horiz-scroll-image" src="img/projects/cirrus/burger-lav.png" alt="Burger Menu on Mobile with Lavender Theme">
                     </div>
                     <p><strong>Burger Menu on Mobile: </strong>Users preferred the bright impact of design option 1</p>
 
                     <!-- Options button horizontal scroll section -->
-                    <div>
-                        <img src="img/projects/cirrus/options-secondary.png" alt="Options Button on Desktop with Light Theme">
-                        <img src="img/projects/cirrus/options-primary.png" alt="Options Button on Desktop with Dark Theme">
+                    <div class="horiz-scroll-box">
+                        <img class="horiz-scroll-image" src="img/projects/cirrus/options-secondary.png" alt="Options Button on Desktop with Light Theme">
+                        <img class="horiz-scroll-image" src="img/projects/cirrus/options-primary.png" alt="Options Button on Desktop with Dark Theme">
                     </div>
                     <p><strong>Options Button on Desktop: </strong>Users preferred the first button design that was a little more subtle, but there when they needed it.</p>
                 </div>
@@ -451,17 +459,17 @@
 
                     <!-- Mobile designs horizontal scroll section -->
                     <h2 class="heading-5">Mobile</h2>
-                    <div>
-                        <div>
-                            <img src="img/projects/cirrus/dash-mobile-v2.png" alt="Mobile Dashboard High Fidelity Version 2">
+                    <div class="horiz-scroll-box">
+                        <div class="horiz-scroll-image">
+                            <img class="max-height-img" src="img/projects/cirrus/dash-mobile-v2.png" alt="Mobile Dashboard High Fidelity Version 2">
                             <p class="caption">High Fidelity Version 2</p>
                         </div>
-                        <div>
-                            <img src="img/projects/cirrus/dash-mobile-v1.png" alt="Mobile Dashboard High Fidelity Version 1">
+                        <div class="horiz-scroll-image">
+                            <img class="max-height-img" src="img/projects/cirrus/dash-mobile-v1.png" alt="Mobile Dashboard High Fidelity Version 1">
                             <p class="caption">High Fidelity Version 1</p>
                         </div>
-                        <div>
-                            <img src="img/projects/cirrus/dash-mobile-wireframe.png" alt="Mobile Dashboard Wireframe">
+                        <div class="horiz-scroll-image">
+                            <img class="max-height-img" src="img/projects/cirrus/dash-mobile-wireframe.png" alt="Mobile Dashboard Wireframe">
                             <p class="caption">Original Wireframe</p>
                         </div>
                     </div>
@@ -508,12 +516,6 @@
                     <a class="button secondary text-gray center-text" href="project.html">Back to Case Studies</a>
                 </div>
             </section>
-
-            <!-- Scroll to top button -->
-            <button class="scroll-top-button hide-scroll-button" id="scroll-top-button" aria-label="Back to top">
-            <i class="fas fa-chevron-circle-up"></i>
-            </button>
-
         </main>
 
         <footer>
@@ -528,29 +530,31 @@
                         <p class="center-text">Say hi at <strong>amanda.decker@gmail.com</strong></p>
                     </div>
                 </section>
+            </div>
 
-                <div class="flex-row flex-end extra-top-margin">
-                    <!-- LinkedIn -->
-                    <a href="https://www.linkedin.com/in/adeckergarcia/" target="_blank">
-                        <i class="fab fa-linkedin-in styled-social-icon"></i>
-                    </a>
-                    <!-- Dribbble -->
-                    <a href="https://dribbble.com/adeckergarcia" target="_blank">
-                        <i class="fab fa-dribbble styled-social-icon"></i>
-                    </a>
-                    <!-- Twitter -->
-                    <a href="https://twitter.com/adeckergarcia" target="_blank">
-                        <i class="fab fa-twitter styled-social-icon"></i>
-                    </a>
-                    <!-- Email -->
-                    <a href="mailto:amanda.decker@gmail.com" target="_blank">
-                        <i class="fas fa-envelope styled-social-icon"></i>
-                    </a>
-                </div>
+
+            <div class="flex-row flex-end extra-top-margin">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/adeckergarcia/" target="_blank">
+                    <i class="fab fa-linkedin-in styled-social-icon"></i>
+                </a>
+                <!-- Dribbble -->
+                <a href="https://dribbble.com/adeckergarcia" target="_blank">
+                    <i class="fab fa-dribbble styled-social-icon"></i>
+                </a>
+                <!-- Twitter -->
+                <a href="https://twitter.com/adeckergarcia" target="_blank">
+                    <i class="fab fa-twitter styled-social-icon"></i>
+                </a>
+                <!-- Email -->
+                <a href="mailto:amanda.decker@gmail.com" target="_blank">
+                    <i class="fas fa-envelope styled-social-icon"></i>
+                </a>
+            </div>
         </footer>
-        </div>
+    </div>
 
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
