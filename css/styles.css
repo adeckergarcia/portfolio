@@ -344,8 +344,6 @@ button {
     font-size: 1.6rem;
     font-weight: 500;
     margin: 2rem auto;
-    padding: 1.5rem;
-    padding-top: 1.5rem;
     padding-top: 1.75rem;
     padding-bottom: 1.5rem;
     text-decoration: none;
@@ -361,8 +359,6 @@ button {
 }
 
 .link {
-    padding-right: 0;
-    padding-left: 0;
     text-decoration: none;
 }
 
