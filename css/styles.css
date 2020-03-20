@@ -36,6 +36,7 @@
 
 .navbar {
     height: 6.4rem;
+    z-index: 10;
 }
 
 .brand-logo {
@@ -46,6 +47,7 @@
     font-size: 3.6rem;
     cursor: pointer;
     border: 0;
+    z-index: 10;
 }
 
 .burger-menu-icon:focus {
@@ -95,27 +97,6 @@ aside>a {
 
 span {
     display: block;
-}
-
-
-/* Horizontal scrolling */
-
-.horiz-scroll-box {
-    overflow: auto;
-    white-space: nowrap;
-    width: 40rem;
-}
-
-.horiz-scroll-image {
-    display: inline-block;
-    max-height: 50rem;
-    padding-right: 2rem;
-    z-index: 1000;
-}
-
-.max-height-img {
-    max-height: 50rem;
-    padding-right: 0;
 }
 
 
@@ -279,37 +260,64 @@ img {
 
 .bg-white {
     background-color: white;
-    padding: 5rem 0;
-    transform: skewY(-10deg);
-    z-index: -1;
+    padding: 6rem 2rem;
+    transform: skewY(-6deg);
 }
 
 .bg-sage {
     background-color: #ECF2EF;
-    padding: 5rem 0;
-    transform: skewY(-10deg);
-    z-index: -1;
+    padding: 6rem 2rem;
+    transform: skewY(-6deg);
 }
 
 .bg-gold {
     background-color: #F2EDE0;
-    padding: 5rem 0;
-    transform: skewY(-10deg);
-    z-index: -1;
+    padding: 6rem 2rem;
+    transform: skewY(-6deg);
 }
 
 .bg-gray {
     background-color: #F2F2F2;
-    padding: 6rem 0;
-    transform: skewY(-10deg);
-    z-index: -1;
+    padding: 6rem 2rem;
+    transform: skewY(-6deg);
+}
+
+.bg-trans {
+    background-color: transparent;
+    padding: 6rem 2rem;
+    transform: skewY(-6deg);
 }
 
 .diagonal-box-content {
-    max-width: 50em;
-    padding: 2rem;
-    margin: 0 auto;
-    transform: skewY(10deg);
+    max-width: 60em;
+    margin: 2rem auto;
+    transform: skewY(6deg);
+}
+
+
+/* Horizontal scrolling */
+
+.horiz-scroll-box {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    width: auto;
+}
+
+.horiz-scroll-image {
+    display: inline-block;
+    max-height: 50rem;
+    padding-right: 2rem;
+    margin: 2rem auto;
+}
+
+.max-height-img {
+    max-height: 45rem;
+}
+
+.comp-logos {
+    max-height: 8rem;
+    justify-content: flex-start;
 }
 
 
@@ -323,7 +331,7 @@ button {
     display: block;
     font-size: 1.6rem;
     font-weight: 500;
-    margin: 2rem 0;
+    margin: 2rem auto;
     padding: 1.5rem;
     text-decoration: none;
     text-transform: uppercase;
