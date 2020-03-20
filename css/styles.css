@@ -210,9 +210,15 @@ p {
     text-align: left;
 }
 
-.text-list {
+.icon-list {
     font-size: 1.8rem;
     line-height: 1.8em;
+    margin-bottom: 4rem;
+}
+
+.text-list {
+    font-size: 1.8rem;
+    line-height: 1.4em;
 }
 
 img {
