@@ -97,6 +97,17 @@ span {
     display: block;
 }
 
+.horiz-scroll-wrapper {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.horiz-scroll-image {
+    display: inline-block;
+    padding-right: 2rem;
+}
+
 
 /* Spacing */
 
@@ -118,18 +129,6 @@ span {
 /* .top-padding {
     padding-top: 6rem;
 } */
-
-.hanging-indent {
-    margin-left: 4rem;
-}
-
-.white-box {
-    background-color: white;
-    padding-bottom: 20rem;
-    z-index: 1;
-    transform: skewY(-10deg);
-    position: fixed;
-}
 
 
 /* Text */
@@ -222,12 +221,13 @@ p {
 
 .text-list {
     font-size: 1.8rem;
-    line-height: 1.6em;
+    line-height: 1.8em;
+    margin-bottom: 4rem;
 }
 
 img {
     display: block;
-    max-width: 85vw;
+    max-width: 85%;
     margin: 2rem auto;
 }
 
@@ -292,7 +292,6 @@ img {
 }
 
 .diagonal-box-content {
-    /* border: 1px solid black; */
     max-width: 50em;
     padding: 2rem;
     margin: 0 auto;
@@ -324,16 +323,16 @@ button {
     border: 2px solid #ccb884;
 }
 
-.no-border {
-    display: inline;
-    padding: 1.5rem 0;
-    border: 1px solid black;
+.link {
+    padding: 2rem 0;
+    text-decoration: none;
 }
 
 .arrow {
-    display: inline;
-    /* margin: 0; */
-    width: 3.5rem;
+    display: inline-block;
+    margin: 0;
+    padding-left: 1rem;
+    width: 4.5rem;
 }
 
 
