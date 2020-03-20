@@ -7,91 +7,146 @@
     <title>Amanda Decker Garcia &vert; About</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;500&family=Spartan:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2d56692aba.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <header>
-        <nav>
-            <img src="/logo.png" alt="Personal Brand Logo" />
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="project.html">Work</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+<body class="text-gray">
+    <div class="container">
 
-    <section>
-        <!-- Title and image -->
-        <h1>About Me</h1>
-        <img src="/profile.png" alt="Amanda Garcia">
-        <!-- The Journey color section -->
-        <div>
-            <h2>The Journey</h2>
-            <p>As a kid, I wanted to be an olympic gymnast, a lawyer, and a broadway star. As time went on, I thought maybe I’d be a teacher, an event planner, or even the CEO of a symphony. Big dreams, all over the map.</p>
-            <p>When I look back, I can remember exactly why I wanted to do each of these things. Sometimes, it was because I wanted to entertain or be creative. Other times, I wanted to help people and make a difference in their lives. </p>
-            <p>In each new job I tried, I found myself taking on creative responsibilities that weren’t always in my job description. I enjoyed doing those things, but it made me realize something was missing.</p>
-        </div>
-    </section>
+        <!-- Nav bar -->
+        <header>
+            <nav>
+                <div class="side-padding navbar flex-row align-items-center space-between-items">
+                    <a href="index.html">
+                        <img class="brand-logo" src="img/brand/logo.png" alt="Personal Brand Logo">
+                    </a>
+                    <button class="burger-menu-icon text-gray" aria-label="Navigation menu links" id="burger-menu">&#9776;</button>
+                </div>
+                <ul class="side-padding flex-column align-items-right space-evenly menu-links-closed" id="menu-link-wrapper">
+                    <li>
+                        <a class="spartan menu-link text-gray" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="spartan menu-link text-gray" href="project.html">Work</a>
+                    </li>
+                    <li>
+                        <a class="spartan menu-link text-gray" href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a class="spartan menu-link text-gray" href="mailto:amanda.decker@gmail.com" target="_blank">Contact</a>
+                    </li>
+                </ul>
+                <div class="white-box"></div>
+            </nav>
+        </header>
 
-    <!-- The Spark color section -->
-    <section>
-        <h1>The Spark</h1>
-        <p>In late 2017, I became engaged to my now husband. He had just enrolled in a coding bootcamp to become a software engineer, and when we decided to have a wedding website for our guests, he suggested we try to build it ourselves. Neither of us had
-            ever done anything like that before, but we gave it a try. </p>
-        <p>To our surprise, we pieced together something that we were actually pretty proud of.</p>
-        <p>Designing that wedding website was the spark I needed to rethink my career. I wanted to learn more about the people who got to do this in real life, and that’s when I discovered Product Design. I felt like I found the holy grail: an opportunity
-            to be creative and help people, dig into the technology we use every day, and understand how to make it better.</p>
-        <p>I quit the job I wasn’t thrilled about, signed up for Bloc’s Product Design program, and here we are.</p>
-    </section>
+        <main>
 
-    <!-- The Why color section -->
-    <section>
-        <h1>The Why</h1>
-        <p>So what do I love about product design? Every day, I learn something new. I love building something from scratch and producing real solutions for real people. I love figuring out why something didn’t work and learning from those mistakes. I love
-            the opportunity we have to impact people’s lives through great design, which is so much more than a beautiful interface.</p>
-        <p><strong>And, I get &ast;really&ast; excited about usability tests.</strong></p>
-    </section>
+            <!-- Scroll to top button -->
+            <button class="scroll-top-button hide-scroll-button" id="scroll-top-button" aria-label="Back to top">
+                <i class="fas fa-chevron-circle-up"></i>
+            </button>
 
-    <!-- Just for fun section -->
-    <section>
-        <h1>Just for Fun</h1>
-        <ul>
-            <li>I'm an INFP</li>
-            <li>I love to belt showtunes in the car</li>
-            <li>I've never met a cat I didn't love</li>
-            <li>I have an affinity for inflatable obstacle courses</li>
-            <li>My favorite board game is Clue!</li>
-        </ul>
-    </section>
+            <!-- Page Title -->
+            <section class="bg-white">
+                <div class="diagonal-box-content">
+                    <!-- Title and image -->
+                    <h1 class="heading-1">About Me</h1>
+                    <img src="img/brand/about/profile.png" alt="Amanda Garcia">
+                    <!-- The Journey color section -->
+                </div>
 
-    <!-- Contact section -->
-    <section>
-        <h1>Say Hello</h1>
-        <p>Whether you want to work together or just grab a cup of coffee, I'd love to hear from you.</p>
-        <p>Say hi at <strong>amanda.decker@gmail.com</strong></p>
-    </section>
+            </section>
 
-    <footer>
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/adeckergarcia/">
-            <img src="/linkedin.png" alt="LinkedIn">
-        </a>
-        <!-- Dribbble -->
-        <a href="https://dribbble.com/adeckergarcia">
-            <img src="/dribbble.png" alt="Dribble">
-        </a>
-        <!-- Twitter -->
-        <a href="https://twitter.com/adeckergarcia">
-            <img src="/twitter.png" alt="Twitter">
-        </a>
-    </footer>
+            <!-- The Journey -->
+            <section class="bg-gold">
+                <div class="diagonal-box-content">
+                    <h2 class="heading-5">The Journey</h2>
+                    <p>As a kid, I wanted to be an olympic gymnast, a lawyer, and a broadway star. As time went on, I thought maybe I’d be a teacher, an event planner, or even the CEO of a symphony. Big dreams, all over the map.</p>
+                    <p>When I look back, I can remember exactly why I wanted to do each of these things. Sometimes, it was because I wanted to entertain or be creative. Other times, I wanted to help people and make a difference in their lives. </p>
+                    <p>In each new job I tried, I found myself taking on creative responsibilities that weren’t always in my job description. I enjoyed doing those things, but it made me realize something was missing.</p>
+                </div>
+            </section>
+
+            <!-- The Spark -->
+            <section class="bg-white">
+                <div class="diagonal-box-content">
+                    <h1 class="heading-5">The Spark</h1>
+                    <p>In late 2017, I became engaged to my now husband. He had just enrolled in a coding bootcamp to become a software engineer, and when we decided to have a wedding website for our guests, he suggested we try to build it ourselves. Neither
+                        of us had ever done anything like that before, but we gave it a try. </p>
+                    <p>To our surprise, we pieced together something that we were actually pretty proud of.</p>
+                    <p>Designing that wedding website was the spark I needed to rethink my career. I wanted to learn more about the people who got to do this in real life, and that’s when I discovered Product Design. I felt like I found the holy grail: an
+                        opportunity to be creative and help people, dig into the technology we use every day, and understand how to make it better.</p>
+                    <p>I quit the job I wasn’t thrilled about, signed up for Bloc’s Product Design program, and here we are.</p>
+                </div>
+            </section>
+
+            <!-- The Why -->
+            <section class="bg-sage">
+                <div class="diagonal-box-content">
+                    <h1 class="heading-5">The Why</h1>
+                    <p>So what do I love about product design? Every day, I learn something new. I love building something from scratch and producing real solutions for real people. I love figuring out why something didn’t work and learning from those mistakes.
+                        I love the opportunity we have to impact people’s lives through great design, which is so much more than a beautiful interface.</p>
+                    <p><strong>And, I get &ast;really&ast; excited about usability tests.</strong></p>
+                </div>
+            </section>
+
+            <!-- Just For Fun -->
+            <section class="bg-white">
+                <div class="diagonal-box-content">
+                    <h1 class="heading-5">Just for Fun</h1>
+                    <ul class="text-list">
+                        <li><i class="bullet fas fa-circle"></i>I'm an INFP
+                        </li>
+                        <li><i class="bullet fas fa-circle"></i>I love to belt showtunes in the car
+                        </li>
+                        <li><i class="bullet fas fa-circle"></i>I've never met a cat I didn't love
+                        </li>
+                        <li><i class="bullet fas fa-circle"></i>I have an affinity for inflatable obstacle courses
+                        </li>
+                        <li><i class="bullet fas fa-circle"></i>My favorite board game is Clue!
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Start of "footer" - includes contact section -->
+
+            <!-- Contact section -->
+            <section class="skewed-bg-gold-padding bg-gold">
+                <div class="diagonal-box-content">
+                    <h1 class="heading-4">Say Hello</h1>
+                    <hr class="divider">
+                    <p class="center-text">Whether you want to work together or just grab a cup of coffee, I'd love to hear from you.</p>
+                    <p class="center-text">Say hi at <strong>amanda.decker@gmail.com</strong></p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="extra-top-margin">
+            <div class="flex-row align-items-right flex-end">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/adeckergarcia/" target="_blank">
+                    <i class="fab fa-linkedin-in styled-social-icon"></i>
+                </a>
+                <!-- Dribbble -->
+                <a href="https://dribbble.com/adeckergarcia" target="_blank">
+                    <i class="fab fa-dribbble styled-social-icon"></i>
+                </a>
+                <!-- Twitter -->
+                <a href="https://twitter.com/adeckergarcia" target="_blank">
+                    <i class="fab fa-twitter styled-social-icon"></i>
+                </a>
+                <!-- Email -->
+                <a href="mailto:amanda.decker@gmail.com" target="_blank">
+                    <i class="fas fa-envelope styled-social-icon"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
