@@ -212,8 +212,12 @@ p {
 
 .icon-list {
     font-size: 1.8rem;
-    line-height: 1.8em;
+    line-height: 1.4em;
     margin-bottom: 4rem;
+}
+
+.icon-list>li {
+    margin-bottom: 1.4rem;
 }
 
 .text-list {
@@ -221,13 +225,21 @@ p {
     line-height: 1.4em;
 }
 
+.text-list>li {
+    margin-bottom: 1.4rem;
+}
+
 img {
     display: block;
     max-width: 85%;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 3rem;
     margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.border-img {
+    border: 1px solid #e0e0e0;
 }
 
 .hidden {
@@ -316,17 +328,24 @@ img {
     overflow: auto;
     white-space: nowrap;
     width: auto;
+    height: 80vh;
 }
 
 .horiz-scroll-image {
     display: inline-block;
-    /* max-height: 50rem; */
-    padding-right: 2rem;
-    margin: 4rem auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-right: 2rem;
+}
+
+.horiz-scroll-image-flush {
+    display: inline-block;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .max-height-img {
-    max-height: 75vh;
+    max-height: 70vh;
 }
 
 .comp-logos {
@@ -340,6 +359,11 @@ img {
 
 .fullwidth-img {
     max-width: 100%;
+}
+
+.half-width-img {
+    max-width: 60vw;
+    margin-bottom: 4rem;
 }
 
 
