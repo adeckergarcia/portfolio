@@ -112,6 +112,10 @@ span {
     margin-top: 8rem;
 }
 
+.extra-bottom-margin {
+    margin-bottom: 8rem;
+}
+
 
 /* .bottom-padding {
     padding-bottom: 6rem;
