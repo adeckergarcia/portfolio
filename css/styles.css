@@ -153,6 +153,20 @@ strong {
 .heading-2,
 .heading-3,
 .heading-4,
+.heading-5,
+p,
+.subtitle,
+.caption,
+ul,
+li {
+    max-width: 60rem;
+    margin: auto;
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
 .heading-5 {
     font-family: 'Spartan', sans-serif;
     letter-spacing: 0.2rem;
@@ -241,6 +255,7 @@ img {
     margin-bottom: 2rem;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 2rem;
 }
 
 .border-img {
@@ -321,7 +336,7 @@ img {
 }
 
 .diagonal-box-content {
-    max-width: 60em;
+    /* max-width: 60rem; */
     margin: 2rem auto;
     transform: skewY(6deg);
 }
@@ -330,18 +345,17 @@ img {
 /* Horizontal scrolling */
 
 .horiz-scroll-box {
-    display: flex;
     overflow: auto;
     white-space: nowrap;
-    width: auto;
-    height: 80vh;
+    width: 100%;
 }
 
 .horiz-scroll-image {
     display: inline-block;
     margin-top: 4rem;
     margin-bottom: 4rem;
-    margin-right: 2rem;
+    /* max-height: 50%; */
+    padding: 1rem;
 }
 
 .horiz-scroll-image-flush {
@@ -384,6 +398,7 @@ button {
     font-size: 1.6rem;
     font-weight: 500;
     margin: 2rem auto;
+    max-width: 40rem;
     padding-top: 1.75rem;
     padding-bottom: 1.5rem;
     text-decoration: none;
@@ -447,4 +462,64 @@ button {
     font-size: 2rem;
     margin: .75rem;
     padding: 1rem;
+}
+
+
+/* Media queries */
+
+
+/* Mobile */
+
+@media screen and (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+}
+
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+    /* .horiz-scroll-box {
+        overflow: initial;
+    } */
+    /* .diagonal-box-content {
+        min-width: 60rem;
+    } */
+    .grid-two {
+        /* border: 1px solid black; */
+        display: inline-grid;
+        justify-content: space-between;
+        width: 44%;
+        margin: auto;
+    }
+    .mobile {
+        display: none;
+    }
+    .horiz-scroll-image {
+        /* max-width: 30%; */
+    }
+    .max-height-img {
+        /* max-width: 40vw; */
+    }
+}
+
+
+/* Desktop */
+
+@media screen and (min-width: 1008px) {
+    /* .horiz-scroll-box {
+        overflow: initial;
+    } */
+    /* .grid {
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+    } */
+    .grid-three {
+        /* border: 1px solid black; */
+        display: inline-grid;
+        margin-right: 3rem;
+        width: 27%;
+    }
 }
