@@ -37,6 +37,7 @@
 .navbar {
     background-color: white;
     height: 6.4rem;
+    z-index: 10;
 }
 
 .brand-logo {
