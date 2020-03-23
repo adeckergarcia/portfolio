@@ -275,6 +275,7 @@ img {
     margin-bottom: 4rem;
     margin-top: 2rem;
     width: 50%;
+    max-width: 30rem;
 }
 
 .priority-icon {
@@ -364,10 +365,6 @@ img {
     margin-bottom: 4rem;
 }
 
-.max-height-img {
-    max-height: 70vh;
-}
-
 .comp-logos {
     max-height: 7rem;
     justify-content: flex-start;
@@ -377,13 +374,33 @@ img {
     margin-left: 0;
 }
 
+.max-height-img {
+    max-height: 60rem;
+}
+
 .fullwidth-img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .half-width-img {
     max-width: 60vw;
     margin-bottom: 4rem;
+}
+
+.resize-large-img {
+    max-width: 40rem;
+    max-height: 35rem;
+}
+
+.inline-img {
+    display: inline;
+    width: 100%;
+    max-width: 30rem;
+}
+
+.container-width-img {
+    width: 100%;
+    max-width: 60rem;
 }
 
 
@@ -488,12 +505,6 @@ button {
         /* display: inline-grid; */
         /* justify-content: space-between; */
         /* width: 44%; */
-    }
-    .horiz-scroll-image {
-        /* max-width: 30%; */
-    }
-    .max-height-img {
-        /* max-width: 40vw; */
     }
 }
 
