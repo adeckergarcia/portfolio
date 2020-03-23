@@ -50,6 +50,8 @@
 
 .brand-logo {
     width: 5.6rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .burger-menu-icon {
@@ -533,7 +535,7 @@ button {
 }
 
 .personas {
-    grid-gap: 0;
+    grid-column-gap: 3rem;
     max-width: 75vw;
 }
 
@@ -545,6 +547,8 @@ button {
 .personas-6 {
     margin: 0 auto;
     padding: 1rem 0;
+    text-align: left;
+    line-height: 1.4rem;
 }
 
 .personas-1 {
@@ -630,6 +634,9 @@ button {
     .desktop {
         display: none;
     }
+    .expanded-menu {
+        display: none;
+    }
 }
 
 
@@ -637,6 +644,9 @@ button {
 
 @media screen and (min-width: 768px) {
     .mobile {
+        display: none;
+    }
+    .expanded-menu {
         display: none;
     }
     .grid-two>.roles-tools {
@@ -657,9 +667,34 @@ button {
     .mobile {
         display: none;
     }
+    .burger-menu {
+        display: none;
+    }
+    .menu-links-open {
+        display: none;
+    }
+    .expanded-menu {
+        display: flex;
+    }
+    /* Expanded menu */
+    .brand-logo-large {
+        width: 8rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        margin: 0;
+    }
+    .flex-grow-logo {
+        flex-grow: 10;
+    }
+    .flex-grow-link {
+        flex-grow: 1;
+        text-align: center;
+    }
+    /* H1 */
     .heading-1 {
         font-size: 5.6rem;
     }
+    /* Grids */
     .grid-3 {
         grid-template-columns: auto auto auto;
     }
@@ -670,6 +705,9 @@ button {
     .comp-item-4,
     .comp-item-6 {
         grid-row: 2 / 2;
+    }
+    .personas {
+        grid-template-columns: 50% 50%;
     }
     .personas-4 {
         grid-row: 1 / 1;
