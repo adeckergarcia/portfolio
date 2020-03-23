@@ -160,7 +160,8 @@ p,
 ul,
 li {
     max-width: 60rem;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .heading-1,
@@ -336,7 +337,6 @@ img {
 }
 
 .diagonal-box-content {
-    /* max-width: 60rem; */
     margin: 2rem auto;
     transform: skewY(6deg);
 }
@@ -346,6 +346,7 @@ img {
 
 .horiz-scroll-box {
     overflow: auto;
+    text-align: center;
     white-space: nowrap;
     width: 100%;
 }
@@ -354,7 +355,6 @@ img {
     display: inline-block;
     margin-top: 4rem;
     margin-bottom: 4rem;
-    /* max-height: 50%; */
     padding: 1rem;
 }
 
@@ -480,21 +480,14 @@ button {
 /* Tablet */
 
 @media screen and (min-width: 768px) {
-    /* .horiz-scroll-box {
-        overflow: initial;
-    } */
-    /* .diagonal-box-content {
-        min-width: 60rem;
-    } */
-    .grid-two {
-        /* border: 1px solid black; */
-        display: inline-grid;
-        justify-content: space-between;
-        width: 44%;
-        margin: auto;
-    }
     .mobile {
         display: none;
+    }
+    .grid-two {
+        /* border: 1px solid black; */
+        /* display: inline-grid; */
+        /* justify-content: space-between; */
+        /* width: 44%; */
     }
     .horiz-scroll-image {
         /* max-width: 30%; */
@@ -508,18 +501,18 @@ button {
 /* Desktop */
 
 @media screen and (min-width: 1008px) {
-    /* .horiz-scroll-box {
-        overflow: initial;
-    } */
-    /* .grid {
-        display: flex;
-        justify-content: space-evenly;
-        margin: auto;
-    } */
+    .mobile {
+        display: none;
+    }
+    .grid {
+        /* display: flex; */
+        /* justify-content: space-evenly; */
+        /* margin: auto; */
+    }
     .grid-three {
         /* border: 1px solid black; */
-        display: inline-grid;
-        margin-right: 3rem;
-        width: 27%;
+        /* display: inline-grid; */
+        /* margin-right: 3rem; */
+        /* width: 27%; */
     }
 }
