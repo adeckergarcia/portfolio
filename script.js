@@ -24,7 +24,7 @@ let scrollPosition = window.scrollTop
 scrollTopButton.addEventListener("click", function() {
     window.scrollTo({
         top: 0,
-        behavior: "smooth"
+        behavior: "auto"
     })
 });
 
