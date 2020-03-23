@@ -455,8 +455,8 @@ button {
     color: #C1D3D9;
     font-size: 4rem;
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 8rem;
+    right: 5rem;
     z-index: 10;
 }
 
