@@ -172,7 +172,7 @@ p,
     font-family: 'Spartan', sans-serif;
     letter-spacing: 0.2rem;
     line-height: 1.3em;
-    padding-top: 4rem;
+    padding-top: 8rem;
     padding-bottom: 1rem;
     text-align: center;
     text-transform: uppercase;
@@ -184,7 +184,7 @@ p,
     font-family: 'Heebo', sans-serif;
     font-weight: 300;
     line-height: 1.4em;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 
 .heading-1 {
@@ -432,11 +432,13 @@ button {
 
 .link {
     text-decoration: none;
+    text-align: center;
 }
 
 .arrow {
     display: inline-block;
     margin: 0;
+    padding-bottom: 0;
     padding-left: 1rem;
     width: 4.5rem;
 }
