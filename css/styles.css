@@ -25,6 +25,14 @@
     transition: all .15s ease;
 }
 
+.menu-link {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 .menu-links-open {
     height: 18rem;
     border-bottom: 1px solid #e0e0e0;
@@ -53,14 +61,6 @@
 
 .burger-menu-icon:focus {
     outline: none;
-}
-
-.menu-link {
-    font-size: 1.8rem;
-    font-weight: 500;
-    letter-spacing: .2rem;
-    text-decoration: none;
-    text-transform: uppercase;
 }
 
 
@@ -157,8 +157,8 @@ strong {
 p,
 .subtitle,
 .caption,
-ul,
-li {
+.icon-list,
+.text-list {
     max-width: 60rem;
     margin-left: auto;
     margin-right: auto;
