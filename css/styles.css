@@ -111,7 +111,7 @@ span {
 }
 
 .extra-top-margin {
-    margin-top: 10rem;
+    margin-top: 16rem;
 }
 
 .extra-bottom-margin {
@@ -174,14 +174,13 @@ p,
     letter-spacing: 0.2rem;
     line-height: 1.3em;
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     text-align: center;
     text-transform: uppercase;
 }
 
-.heading-4,
-.heading-5 {
-    padding-top: 8rem;
+.heading-1 {
+    padding-top: 0;
 }
 
 .projects>.heading-4,
@@ -342,7 +341,7 @@ img {
 
 .bg-trans {
     background-color: transparent;
-    padding: 6rem 2rem;
+    padding: 2rem;
     margin-top: 6rem;
     transform: skewY(-6deg);
     z-index: 5;
@@ -360,7 +359,6 @@ img {
 
 .horiz-scroll-image {
     display: inline-block;
-    margin-top: 4rem;
     margin-bottom: 4rem;
     padding: 1rem;
 }
@@ -456,7 +454,7 @@ button {
     font-size: 4rem;
     position: fixed;
     bottom: 8rem;
-    right: 5rem;
+    right: 2rem;
     z-index: 10;
 }
 
@@ -548,7 +546,6 @@ button {
     margin: 0 auto;
     padding: 1rem 0;
     text-align: left;
-    line-height: 1.4rem;
 }
 
 .personas-1 {
