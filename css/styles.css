@@ -172,10 +172,15 @@ p,
     font-family: 'Spartan', sans-serif;
     letter-spacing: 0.2rem;
     line-height: 1.3em;
-    padding-top: 8rem;
-    padding-bottom: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     text-align: center;
     text-transform: uppercase;
+}
+
+.heading-4,
+.heading-5 {
+    padding-top: 8rem;
 }
 
 p,
@@ -252,7 +257,6 @@ p {
 img {
     display: block;
     max-width: 85%;
-    margin-top: 3rem;
     margin-bottom: 2rem;
     margin-left: auto;
     margin-right: auto;
@@ -389,7 +393,7 @@ img {
 
 .resize-large-img {
     max-width: 40rem;
-    max-height: 35rem;
+    max-height: 45rem;
 }
 
 .inline-img {
@@ -414,7 +418,7 @@ button {
     display: block;
     font-size: 1.6rem;
     font-weight: 500;
-    margin: 2rem auto;
+    margin: 4rem auto;
     max-width: 40rem;
     padding-top: 1.75rem;
     padding-bottom: 1.5rem;
@@ -484,6 +488,143 @@ button {
 }
 
 
+/* Grid sections */
+
+.grid-two {
+    border: 1px solid red;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: auto;
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 60rem;
+}
+
+.roles-tools-1,
+.roles-tools-2,
+.roles-tools-3,
+.roles-tools-4,
+.roles-tools-5,
+.roles-tools-6 {
+    text-align: left;
+    margin: 0;
+    padding: 1rem 0;
+    line-height: 1.4rem;
+}
+
+.roles-tools-1 {
+    grid-row: 1 / 1;
+}
+
+.roles-tools-2 {
+    grid-row: 2 / 2;
+}
+
+.roles-tools-3 {
+    grid-row: 3 / 3;
+}
+
+.roles-tools-4 {
+    grid-row: 4 / 4;
+}
+
+.roles-tools-5 {
+    grid-row: 5 / 5;
+}
+
+.roles-tools-6 {
+    grid-row: 6 / 6;
+}
+
+.personas {
+    grid-gap: 0;
+    max-width: 75vw;
+}
+
+.personas-1,
+.personas-2,
+.personas-3,
+.personas-4,
+.personas-5,
+.personas-6 {
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.personas-1 {
+    grid-row: 1 / 1;
+}
+
+.personas-2 {
+    grid-row: 2 / 2;
+}
+
+.personas-3 {
+    grid-row: 3 / 3;
+}
+
+.personas-4 {
+    grid-row: 4 / 4;
+}
+
+.personas-5 {
+    grid-row: 5 / 5;
+}
+
+.personas-6 {
+    grid-row: 6 / 6;
+}
+
+.grid-three {
+    /* border: 1px solid black; */
+    display: grid;
+    grid-row-gap: 1rem;
+    grid-column-gap: 3rem;
+    grid-template-columns: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 5rem;
+    width: 100%;
+    max-width: 75vw;
+}
+
+.comp-item-1,
+.comp-item-2,
+.comp-item-3,
+.comp-item-4,
+.comp-item-5,
+.comp-item-6 {
+    text-align: left;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.comp-item-1 {
+    grid-row: 1 / 1;
+}
+
+.comp-item-2 {
+    grid-row: 2 / 2;
+}
+
+.comp-item-3 {
+    grid-row: 3 / 3;
+}
+
+.comp-item-4 {
+    grid-row: 4 / 4;
+}
+
+.comp-item-5 {
+    grid-row: 5 / 5;
+}
+
+.comp-item-6 {
+    grid-row: 6 / 6;
+}
+
+
 /* Media queries */
 
 
@@ -502,11 +643,14 @@ button {
     .mobile {
         display: none;
     }
-    .grid-two {
-        /* border: 1px solid black; */
-        /* display: inline-grid; */
-        /* justify-content: space-between; */
-        /* width: 44%; */
+    .grid-two>.roles-tools {
+        grid-template-columns: auto auto;
+    }
+    .roles-tools-5 {
+        grid-row: 1 / 2;
+    }
+    .roles-tools-6 {
+        grid-row: 2 / 5;
     }
 }
 
@@ -517,15 +661,24 @@ button {
     .mobile {
         display: none;
     }
-    .grid {
-        /* display: flex; */
-        /* justify-content: space-evenly; */
-        /* margin: auto; */
+    .grid-3 {
+        grid-template-columns: auto auto auto;
     }
-    .grid-three {
-        /* border: 1px solid black; */
-        /* display: inline-grid; */
-        /* margin-right: 3rem; */
-        /* width: 27%; */
+    .comp-item-3,
+    .comp-item-5 {
+        grid-row: 1 / 1;
+    }
+    .comp-item-4,
+    .comp-item-6 {
+        grid-row: 2 / 2;
+    }
+    .personas-4 {
+        grid-row: 1 / 1;
+    }
+    .personas-5 {
+        grid-row: 2 / 2;
+    }
+    .personas-6 {
+        grid-row: 3 / 3;
     }
 }
