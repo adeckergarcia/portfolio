@@ -116,15 +116,14 @@ span {
     margin-bottom: 8rem;
 }
 
+.negative-margin {
+    margin-bottom: -24rem;
+    margin-top: -5rem;
+}
 
-/* .bottom-padding {
-    padding-bottom: 6rem;
-} */
-
-
-/* .top-padding {
-    padding-top: 6rem;
-} */
+.remove-left-margin {
+    margin-left: 0;
+}
 
 
 /* Text */
@@ -181,6 +180,12 @@ p,
 .heading-4,
 .heading-5 {
     padding-top: 8rem;
+}
+
+.projects>.heading-4,
+.projects>.subtitle {
+    padding-top: 0;
+    padding-bottom: 2rem;
 }
 
 p,
@@ -276,8 +281,8 @@ img {
 
 .divider {
     border-top: 2px solid #ccb884;
-    margin-bottom: 4rem;
-    margin-top: 2rem;
+    margin-bottom: 6rem;
+    margin-top: -1rem;
     width: 50%;
     max-width: 30rem;
 }
@@ -303,6 +308,11 @@ img {
 
 
 /* Background - All Sections */
+
+.diagonal-box-content {
+    margin: 2rem auto;
+    transform: skewY(6deg);
+}
 
 .bg-white {
     background-color: white;
@@ -336,16 +346,6 @@ img {
     z-index: 5;
 }
 
-.negative-margin {
-    margin-bottom: -24rem;
-    margin-top: -5rem;
-}
-
-.diagonal-box-content {
-    margin: 2rem auto;
-    transform: skewY(6deg);
-}
-
 
 /* Horizontal scrolling */
 
@@ -372,10 +372,6 @@ img {
 .comp-logos {
     max-height: 7rem;
     justify-content: flex-start;
-}
-
-.remove-left-margin {
-    margin-left: 0;
 }
 
 .max-height-img {
@@ -491,7 +487,7 @@ button {
 /* Grid sections */
 
 .grid-two {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: auto;
@@ -660,6 +656,9 @@ button {
 @media screen and (min-width: 1008px) {
     .mobile {
         display: none;
+    }
+    .heading-1 {
+        font-size: 5.6rem;
     }
     .grid-3 {
         grid-template-columns: auto auto auto;
