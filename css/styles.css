@@ -96,12 +96,21 @@
         padding-right: 2rem;
     }
     
+    .remove-side-padding {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
     .extra-top-margin {
         margin-top: 16rem;
     }
     
     .extra-bottom-margin {
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
+    }
+    
+    .extra-padding-bottom {
+        padding-bottom: 4rem;
     }
     
     .bottom-paragraph {
@@ -146,7 +155,6 @@
     p,
     .subtitle,
     .caption,
-    .icon-list,
     .text-list,
     .text-list-tight {
         max-width: 60rem;
@@ -209,6 +217,8 @@
         font-family: 'Libre Franklin', sans-serif;
         font-size: 1.4rem;
         text-align: center;
+        font-style: italic;
+        margin-bottom: 2rem;
     }
     
     .center-text {
@@ -249,7 +259,6 @@
         margin-bottom: 2rem;
         margin-left: auto;
         margin-right: auto;
-        padding-bottom: 2rem;
     }
     
     .border-img {
@@ -354,18 +363,26 @@ color: rgb(245, 245, 245);
         text-align: center;
         white-space: nowrap;
         width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .horiz-scroll-box::-webkit-scrollbar {
+        display: none;
     }
     
     .horiz-scroll-image {
         display: inline-block;
-        margin-bottom: 4rem;
-        padding: 1rem;
+        margin-bottom: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 0;
     }
     
     .horiz-scroll-image-flush {
         display: inline-block;
         margin-top: 4rem;
         margin-bottom: 4rem;
+        padding: 0;
     }
     
     .comp-logo {
@@ -589,13 +606,6 @@ color: rgb(245, 245, 245);
         max-width: 40rem;
         grid-row-gap: 2rem;
         grid-column-gap: 4rem;
-    }
-    
-    .comp-item-1,
-    .comp-item-2,
-    .comp-item-3 {
-        text-align: left;
-        /* margin: 0; */
     }
     
     .comp-item-1 {
