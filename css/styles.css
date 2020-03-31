@@ -58,10 +58,47 @@
 }
 
 
+/* Featured project overlays */
+
+.featured-project-container {
+    background-image: url("../img/projects/cirrus/cirrus-home-page.png");
+    background-position: center center;
+    background-size: contain;
+    height: 45rem;
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-text {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 0;
+    opacity: 1;
+}
+
+.project-overlay {
+    display: flex;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 100%;
+    width: 100%;
+}
+
+.project-overlay:hover {
+    opacity: 1;
+}
+
+
 /* Positioning */
 
 .align-items-center {
     align-items: center;
+}
+
+.justify-items-center {
+    justify-content: center;
 }
 
 .align-items-right {
@@ -311,6 +348,7 @@ img {
     border-top: 1px solid #c6c6c6;
     margin-bottom: 4rem;
     max-width: 60rem;
+    width: 50%;
 }
 
 .priority-icon {
@@ -543,7 +581,6 @@ button {
 /* Grid sections */
 
 .grid-two {
-    /* border: 1px solid red; */
     display: grid;
     grid-template-columns: auto;
     margin-left: auto;
