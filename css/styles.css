@@ -159,6 +159,7 @@ strong {
     font-weight: 500;
 }
 
+.special-heading,
 .heading-1,
 .heading-2,
 .heading-3,
@@ -174,6 +175,7 @@ p,
     margin-right: auto;
 }
 
+.special-heading,
 .heading-1,
 .heading-2,
 .heading-3,
@@ -187,6 +189,11 @@ p,
     text-transform: uppercase;
 }
 
+.special-heading {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
 p,
 .subtitle {
     font-family: 'Heebo', sans-serif;
@@ -195,6 +202,7 @@ p,
     padding-bottom: 3rem;
 }
 
+.special-heading,
 .heading-1 {
     font-size: 3.6rem;
 }
@@ -364,8 +372,9 @@ img {
     background-color: transparent;
     padding: 2rem;
     margin-top: 15rem;
-    transform: skewY(-4deg);
+    transform: skewY(-3deg);
     z-index: 5;
+    width: 100%;
 }
 
 .bg-top {
@@ -769,6 +778,11 @@ button {
     }
     .menu-links-open {
         display: none;
+    }
+    /* Heading-1 */
+    .special-heading {
+        font-size: 4.2rem;
+        max-width: 100vw;
     }
     /* Change diagonal background padding */
     .bg-white,
