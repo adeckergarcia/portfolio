@@ -691,6 +691,19 @@ button {
     grid-row: 4 / 4;
 }
 
+.prototype {
+    max-width: 80rem;
+    grid-column-gap: 5rem;
+}
+
+.prototype-1 {
+    grid-row: 1 / 1;
+}
+
+.prototype-2 {
+    grid-row: 2 / 2;
+}
+
 
 /* Media queries */
 
@@ -898,6 +911,12 @@ button {
         grid-row: 1 / 1;
     }
     .deliverables-2 {
+        grid-row: 1 / 1;
+    }
+    .prototype-1 {
+        grid-row: 1 / 1;
+    }
+    .prototype-2 {
         grid-row: 1 / 1;
     }
     /* Sticky tab bar */
