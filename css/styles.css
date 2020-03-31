@@ -413,7 +413,7 @@ img {
 }
 
 .max-height-img {
-    max-height: 60rem;
+    max-height: 45rem;
 }
 
 .fullwidth-img {
@@ -767,6 +767,9 @@ button {
     .bg-top {
         padding-top: 15rem;
         padding-bottom: 8rem;
+    }
+    .max-height-img {
+        max-height: 60rem;
     }
     /* Expanded menu */
     .expanded-menu {
