@@ -187,6 +187,10 @@ body {
     font-weight: 500;
 }
 
+.italics {
+    font-style: italic;
+}
+
 .heading-1,
 .heading-2,
 .heading-3,
@@ -277,11 +281,16 @@ p {
 }
 
 .caption {
-    font-family: 'Libre Franklin', sans-serif;
     font-size: 1.4rem;
     text-align: center;
     font-style: italic;
     margin-bottom: 2rem;
+}
+
+.about-caption {
+    font-size: 1.6rem;
+    line-height: 1.5em;
+    padding-bottom: 1rem;
 }
 
 .center-text {
@@ -433,10 +442,23 @@ img {
     padding-left: 2rem;
 }
 
+.bg-top-about {
+    background-color: white;
+    padding-top: 16rem;
+    padding-bottom: 10rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
 .bg-footer {
-    background-color: transparent;
+    /* background-image: linear-gradient(transparent 40%, #eaf0f2); */
+    /* background-image: linear-gradient(transparent 40%, #d6e1e5); */
+    background-image: linear-gradient(transparent 40%, #dae5df);
     padding-top: 8rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
+    margin-bottom: 0;
+    position: absolute;
+    width: 100%;
 }
 
 
@@ -542,6 +564,7 @@ button {
 .link {
     text-decoration: none;
     text-align: center;
+    font-weight: 500;
 }
 
 .arrow {
@@ -584,12 +607,14 @@ button {
 /* Footer section */
 
 .styled-social-icon {
-    background: #ccb884;
-    border-radius: 50%;
-    color: #ffffff;
+    color: #4b4b4b;
     font-size: 2rem;
     margin: .75rem;
     padding: 1rem;
+}
+
+.styled-social-icon:hover {
+    color: #00665A;
 }
 
 
@@ -702,6 +727,27 @@ button {
     grid-row: 2 / 2;
 }
 
+.about {
+    grid-column-gap: 3rem;
+    max-width: 95rem;
+}
+
+.about-1 {
+    grid-row: 1 / 1;
+}
+
+.about-2 {
+    grid-row: 2 / 2;
+}
+
+.about-3 {
+    grid-row: 3 / 3;
+}
+
+.about-4 {
+    grid-row: 4 / 4;
+}
+
 .grid-three {
     /* border: 1px solid blue; */
     display: grid;
@@ -807,6 +853,11 @@ button {
     .tab-bar {
         display: none;
     }
+    .title {
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+    }
     .roles-tools {
         grid-template-columns: 50% 50%;
         max-width: 50rem;
@@ -820,6 +871,30 @@ button {
     }
     .roles-tools-3 {
         grid-row: 1 / 3;
+    }
+    .about {
+        grid-template-columns: 40% 55%;
+        grid-column-gap: 5rem;
+        max-width: 90rem;
+        /* width: 95%; */
+    }
+    .about-1 {
+        grid-row: 1 / 1;
+        grid-column: 1 / 3;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .about-2 {
+        grid-row: 2 / 2;
+        grid-column: 1 / 1;
+    }
+    .about-3 {
+        grid-row: 3 / 3;
+        grid-column: 1 / 1;
+    }
+    .about-4 {
+        grid-row: 2 / 4;
+        grid-column: 2 / 2;
     }
 }
 
@@ -937,6 +1012,8 @@ button {
     }
     .title {
         text-align: left;
+        margin-left: 0;
+        margin-right: 0;
     }
     .intro-1 {
         grid-row: 1 / 1;
