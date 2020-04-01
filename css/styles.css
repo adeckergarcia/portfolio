@@ -765,6 +765,9 @@ button {
     .tablet {
         display: none;
     }
+    .tablet-desktop {
+        display: none;
+    }
     .expanded-menu {
         display: none;
     }
