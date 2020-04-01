@@ -453,7 +453,7 @@ img {
 .bg-footer {
     /* background-image: linear-gradient(transparent 40%, #eaf0f2); */
     /* background-image: linear-gradient(transparent 40%, #d6e1e5); */
-    background-image: linear-gradient(transparent 40%, #dae5df);
+    background-image: linear-gradient(transparent 40%, rgba(184, 204, 200, 0.6));
     padding-top: 8rem;
     padding-bottom: 4rem;
     margin-bottom: 0;
