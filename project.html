@@ -69,9 +69,22 @@
                 <i class="fas fa-chevron-circle-up"></i>
                 </button>
 
+            <!-- Sticky tab bar -->
+            <div class="sticky-tab-bar">
+                <div class="tab-bar cirrus flex-row align-items-center space-evenly" id="tab-bar-cirrus">
+                    <a class="tab-bar-link text-gray center-text" href="#intro">Introduction</a>
+                    <a class="tab-bar-link text-gray center-text" href="#discovery">Discovery</a>
+                    <a class="tab-bar-link text-gray center-text" href="#infoarc">Information Architecture</a>
+                    <a class="tab-bar-link text-gray center-text" href="#branding">Branding</a>
+                    <a class="tab-bar-link text-gray center-text" href="#design">Visual Design</a>
+                    <a class="tab-bar-link text-gray center-text" href="#testing">Final Tests</a>
+                    <a class="tab-bar-link text-gray center-text" href="#prototype">Prototype</a>
+                </div>
+            </div>
+
             <section>
                 <!-- Title section -->
-                <div class="bg-top">
+                <div class="bg-top-project">
                     <div class="grid-two summary">
                         <div class="summary-1">
                             <h1 class="heading-1 title">Cirrus</h1>
@@ -91,21 +104,8 @@
                 </div>
             </section>
 
-            <!-- Sticky tab bar -->
-            <div class="sticky-tab-bar">
-                <div class="tab-bar cirrus flex-row align-items-center space-evenly" id="tab-bar-cirrus">
-                    <a class="tab-bar-link text-gray center-text" href="#intro">Introduction</a>
-                    <a class="tab-bar-link text-gray center-text" href="#discovery">Discovery</a>
-                    <a class="tab-bar-link text-gray center-text" href="#infoarc">Information Architecture</a>
-                    <a class="tab-bar-link text-gray center-text" href="#branding">Branding</a>
-                    <a class="tab-bar-link text-gray center-text" href="#design">Visual Design</a>
-                    <a class="tab-bar-link text-gray center-text" href="#testing">Final Tests</a>
-                    <a class="tab-bar-link text-gray center-text" href="#prototype">Prototype</a>
-                </div>
-            </div>
-
             <!-- Scroll-to div -->
-            <div class="scroll-div tablet-desktop" id="intro"></div>
+            <div class="scroll-div desktop" id="intro"></div>
 
             <!-- Intro section -->
             <section class="bg-white">
@@ -160,7 +160,7 @@
             </section>
 
             <!-- Scroll-to div -->
-            <div class="scroll-div tablet-desktop" id="discovery"></div>
+            <div class="scroll-div desktop" id="discovery"></div>
 
             <!-- Discovery -->
             <section class="bg-sage">
@@ -290,7 +290,7 @@
             </section>
 
             <!-- Scroll-to div -->
-            <div class="scroll-div tablet-desktop" id="infoarc"></div>
+            <div class="scroll-div desktop" id="infoarc"></div>
 
             <!-- Information Architecture -->
             <section class="bg-sage">
@@ -335,6 +335,10 @@
                     </div>
                 </div>
             </section>
+
+
+
+
 
             <!-- Sketches and Wireframes -->
             <section class="bg-gray">
@@ -388,15 +392,15 @@
                     <!-- Desktop changes -->
                     <h2 class="heading-4">Desktop Changes</h2>
                     <div class="grid-two usability-desktop extra-bottom-margin">
-                        <div class="usability-1">
-                            <div class="horiz-scroll-box mobile">
-                                <img class="max-height-img horiz-scroll-image border-img remove-side-padding" src="img/projects/cirrus/desktop-changes-mobile1.png" alt="Mobile Dashboard High Fidelity Version 1">
-                                <img class="max-height-img horiz-scroll-image border-img remove-side-padding" src="img/projects/cirrus/desktop-changes-mobile2.png" alt="Mobile Dashboard Wireframe">
-                            </div>
-                            <img class="fullwidth-img border-img tablet-desktop" src="img/projects/cirrus/desktop-changes.png" alt="Close Up View of Desktop Dashboard">
-                            <p class="text caption">A closer view of the desktop dashboard's FAB and tridot menu</p>
+                        <div class="horiz-scroll-box usability-1 mobile">
+                            <img class="max-height-img horiz-scroll-image border-img remove-side-padding" src="img/projects/cirrus/desktop-changes-mobile1.png" alt="Mobile Dashboard High Fidelity Version 1">
+                            <img class="max-height-img horiz-scroll-image border-img remove-side-padding" src="img/projects/cirrus/desktop-changes-mobile2.png" alt="Mobile Dashboard Wireframe">
                         </div>
-                        <div class="usability-2">
+                        <div class="usability-1 tablet-desktop">
+                            <img class="fullwidth-img border-img" src="img/projects/cirrus/desktop-changes.png" alt="Close Up View of Desktop Dashboard">
+                        </div>
+                        <p class="text caption usability-2">A closer view of the desktop dashboard's FAB and tridot menu</p>
+                        <div class="usability-3">
                             <p class="text"><strong class="strong-500">1. FAB: </strong>Move into sidebar and add label</p>
                             <p class="text"><strong class="strong-500">2. My Drives: </strong>Show all connected drives in main dashboard for easy access</p>
                             <p class="text"><strong class="strong-500">3. Navigation: </strong>Update locations to Dashboard and All Files only; add stronger location indicator</p>
@@ -407,11 +411,11 @@
                     <!-- Mobile changes -->
                     <h2 class="heading-4">Mobile Changes</h2>
                     <div class="grid-two usability-mobile">
-                        <div class="usability-1">
+                        <div class="usability-mobile-1">
                             <img class="max-height-img" src="img/projects/cirrus/mobile-changes.png" alt="Mobile Dashboard Wireframe">
                             <p class="text caption">The original mobile dashboard showing the bottom navigation bar</p>
                         </div>
-                        <div class="usability-2">
+                        <div class="usability-mobile-2">
                             <p class="text extra-padding-top"><strong class="strong-500">1. My Drives: </strong>Show all connected drives in main dashboard for easy access</p>
                             <p class="text"><strong class="strong-500">2. Bottom Navigation: </strong>Remove bottom navigation bar and replace with top Tab Bar; create Dashboard and All Files as navigation locations</p>
                         </div>
@@ -420,7 +424,7 @@
             </section>
 
             <!-- Scroll-to div -->
-            <div class="scroll-div tablet-desktop" id="branding"></div>
+            <div class="scroll-div desktop" id="branding"></div>
 
             <!-- Branding -->
             <section class="bg-sage">
@@ -473,7 +477,7 @@
             </section>
 
             <!-- Scroll-to div -->
-            <div class="scroll-div tablet-desktop" id="design"></div>
+            <div class="scroll-div desktop" id="design"></div>
 
             <!-- Visual Design -->
             <section class="bg-sage">
@@ -506,7 +510,7 @@
             </section>
 
             <!-- Scroll-to div -->
-            <div class="scroll-div tablet-desktop" id="testing"></div>
+            <div class="scroll-div desktop" id="testing"></div>
 
             <!-- Final Tests -->
             <section class="bg-sage">
@@ -585,15 +589,15 @@
             </section>
 
             <!-- Scroll-to div -->
-            <div class="scroll-div tablet-desktop" id="prototype"></div>
+            <div class="scroll-div desktop" id="prototype"></div>
 
             <!-- Final Prototype -->
             <section class="bg-sage">
                 <div class="diagonal-box-content">
+                    <h1 class="heading-3">Final Prototype</h1>
                     <div class="grid-two prototype">
                         <img class="max-height-img prototype-1" src="img/projects/cirrus/mobile-home.png" alt="Cirrus Home Page">
                         <div class="prototype-2">
-                            <h1 class="heading-3 title">Final Prototype</h1>
                             <p class="text">Each piece of research and information from testing helped guide this project into it's final design, which provides users with an easy way to combine their cloud storage - saving time and preventing headaches! Check out the
                                 mobile and desktop prototypes below.</p>
                             <a class="button button-left primary text-gray center-text" target="_blank" href="https://invis.io/ZTW2FO9DVS7">View Mobile Prototype</a>
@@ -614,14 +618,11 @@
                 </div>
             </section>
 
-            <!-- Scroll-to div -->
-            <div class="scroll-div tablet-desktop"></div>
-
-            <section class="bg-gold">
+            <!-- <aside class="bg-gold">
                 <div class="diagonal-box-content">
                     <a class="button secondary text-gray center-text" href="project.html">Back to Case Studies</a>
                 </div>
-            </section>
+            </aside> -->
 
         </main>
 
