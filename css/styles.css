@@ -255,16 +255,17 @@ p,
 .subtitle {
     font-family: 'Heebo', sans-serif;
     line-height: 1.5em;
-    padding-bottom: 3rem;
 }
 
-p {
-    font-weight: 300;
+.text {
+    font-size: 1.8rem;
+    padding-bottom: 3.5rem;
 }
 
 .subtitle {
     font-weight: 400;
     letter-spacing: .1rem;
+    padding-bottom: 2rem;
 }
 
 .special-heading {
@@ -278,10 +279,14 @@ p {
 
 .heading-1 {
     font-size: 3.8rem;
+    border-bottom: 1px solid gray;
+    margin-bottom: 4rem;
 }
 
 .heading-2 {
     font-size: 3.2rem;
+    border-bottom: 1px solid gray;
+    margin-bottom: 4rem;
 }
 
 .heading-3 {
@@ -300,10 +305,6 @@ p {
 .subtitle {
     font-size: 1.8rem;
     text-transform: uppercase;
-}
-
-p {
-    font-size: 1.8rem;
 }
 
 .caption {
@@ -482,7 +483,6 @@ p {
     text-align: center;
     white-space: nowrap;
     width: 100%;
-    margin-bottom: 2rem;
 }
 
 .horiz-scroll-box::-webkit-scrollbar {
@@ -527,6 +527,16 @@ img {
     box-shadow: .4rem .4rem .4rem #cdcdcd;
 }
 
+.max-height-img,
+.max-width-img,
+.half-width-img,
+.resize-large-img,
+.resize-mobile-img,
+.inline-img,
+.container-width-img {
+    padding-bottom: 3rem;
+}
+
 .max-height-img {
     max-height: 45rem;
 }
@@ -538,6 +548,7 @@ img {
 .fullwidth-img {
     width: 100%;
     max-width: 95rem;
+    margin-bottom: 3rem;
 }
 
 .half-width-img {
