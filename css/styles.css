@@ -453,6 +453,7 @@ p,
 
 .bg-top-home {
     background-color: white;
+    margin-bottom: 10rem;
 }
 
 .bg-top-project {
@@ -1013,6 +1014,13 @@ img {
     }
     .menu-links-open {
         display: none;
+    }
+    /* Top section margin */
+    .bg-top-home,
+    .bg-top-project,
+    .bg-top-about {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
     }
     /* Heading-1 */
     .special-heading {
