@@ -46,6 +46,7 @@
 .navbar {
     background-color: white;
     height: 6.4rem;
+    padding-bottom: 2rem;
     z-index: 10;
 }
 
@@ -456,13 +457,14 @@ p,
 }
 
 .bg-top-home {
-    background-color: white;
-    margin-bottom: 10rem;
+    background-color: #ECF2EF;
+    padding-top: 14rem;
+    padding-bottom: 14rem;
 }
 
 .bg-top-project {
-    /* background-image: linear-gradient(#ecf2ef 50%, white); */
     background-color: white;
+    padding-top: 0;
 }
 
 .bg-top-about {
@@ -1016,11 +1018,15 @@ img {
     .menu-links-open {
         display: none;
     }
-    /* Top section margin */
-    .bg-top-home,
+    /* Top section margins */
     .bg-top-about {
         margin-top: 10rem;
         margin-bottom: 10rem;
+    }
+    .bg-top-home {
+        margin-top: 7rem;
+        padding-top: 18rem;
+        padding-bottom: 18rem;
     }
     /* Heading-1 */
     .special-heading {
