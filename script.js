@@ -19,32 +19,44 @@ burgerMenuButton.addEventListener("click", function() {
 // Scroll to top
 
 const scrollTopButton = document.getElementById("scroll-top-button");
-let scrollPosition = window.scrollTop
+let scrollPosition = window.scrollTop;
 
-scrollTopButton.addEventListener("click", function() {
-    window.scrollTo({
-        top: 0,
-        behavior: "auto"
-    })
-});
+// Button is not on every page
+if (scrollTopButton) {
+    scrollTopButton.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "auto"
+        })
+    });
 
-// scrollTopButton.addEventListener("scroll", function() {
-//     if (scrollPosition > 50) {
-//         scrollTopButton.classList.remove("hide-scroll-button");
-//     } else {
-//         scrollTopButton.classList.add("hide-scroll-button");
-//     }
-// });
+    const topOfPage = 800
 
-// let prevScrollPos = window.pageYOffset;
+    window.onscroll = function() {
+        let currentScrollPos = window.pageYOffset;
+        if (currentScrollPos > topOfPage) {
+            document.getElementById("scroll-top-button").classList.remove("hide-scroll-button");
+        } else {
+            document.getElementById("scroll-top-button").classList.add("hide-scroll-button");
+        }
+    };
+}
 
-const topOfPage = 800
+const overlaySituation = document.getElementById('overlay-situation');
+const thingToOverlay = document.getElementById('thing-to-overlay');
 
-window.onscroll = function() {
-    let currentScrollPos = window.pageYOffset;
-    if (currentScrollPos > topOfPage) {
-        document.getElementById("scroll-top-button").classList.remove("hide-scroll-button");
-    } else {
-        document.getElementById("scroll-top-button").classList.add("hide-scroll-button");
-    }
-};
+if (overlaySituation && thingToOverlay) {
+    overlaySituation.addEventListener('mouseenter', () => {
+        console.log('I moused over')
+        thingToOverlay.classList.remove('opacity-0')
+        thingToOverlay.classList.add('opacity-1')
+    });
+
+    overlaySituation.addEventListener('mouseleave', () => {
+        console.log('I moused over')
+        thingToOverlay.classList.remove('opacity-1')
+        thingToOverlay.classList.add('opacity-0')
+    });
+} else {
+    console.log('not there');
+}
