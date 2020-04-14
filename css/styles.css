@@ -1036,16 +1036,19 @@ img {
         z-index: 101;
         width: 100%;
     }
-    .menu-link:link {
+    .menu-link {
         font-size: 1.4rem;
         font-weight: 500;
         letter-spacing: .2rem;
-        padding: 2rem 0;
+        padding: 1rem 0;
         text-decoration: none;
         text-transform: uppercase;
     }
     .menu-link:hover {
-        color: #ccb884;
+        border-bottom: 2px solid #006676;
+    }
+    .menu-link-active {
+        border-bottom: 2px solid #006676;
     }
     .brand-logo-large {
         width: 7rem;
