@@ -7,7 +7,7 @@
     <title>Amanda Decker Garcia &vert; Portfolio Home</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500&family=Spartan:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:300,500|Spartan&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2d56692aba.js" crossorigin="anonymous"></script>
 </head>
 
@@ -81,33 +81,64 @@
 
             <!-- Featured Projects -->
             <section class="bg-white">
+                <h1 class="heading-2">Featured Projects</h1>
                 <div class="diagonal-box-content projects">
-                    <h1 class="heading-2">Featured Projects</h1>
 
-                    <!-- Cirrus // Desktop -->
-                    <div id="overlay-situation" class="featured-project-container align-items-center justify-items-center flex-column desktop">
-                        <a href="project.html" class="text-gray no-underline">
-                            <div id="thing-to-overlay" class="project-overlay flex-column align-items-center justify-items-center opacity-0">
-                                <h2 class="project-heading">Cirrus</h2>
-                                <h3 class="project-subtitle">UX/UI Design, Branding</h3>
-                                <!-- <hr class="divider-featured-projects"> -->
-                                <p class="text project-text">Cirrus connects your cloud drives to simplify finding your documents when you need them.</p>
-                            </div>
-                        </a>
+                    <div class="desktop">
+                        <!-- Cirrus // Desktop -->
+                        <div id="overlay-area-1" class="featured-project-cirrus align-items-center justify-items-center flex-column">
+                            <a href="project.html" class="text-gray no-underline">
+                                <div id="project-overlay-1" class="project-overlay flex-column align-items-center justify-items-center opacity-0">
+                                    <h2 class="project-heading">Cirrus</h2>
+                                    <h3 class="project-subtitle">Research &bull; UX/UI Design &bull; Branding</h3>
+                                    <p class="text project-text">Cirrus connects your cloud drives to simplify finding your documents when you need them.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- CanvasGT // Desktop -->
+                        <div id="overlay-area-2" class="featured-project-canvasgt align-items-center justify-items-center flex-column">
+                            <a href="https://canvasgt.com/" target="_blank" class="text-gray no-underline">
+                                <div id="project-overlay-2" class="project-overlay flex-column align-items-center justify-items-center opacity-0">
+                                    <h2 class="coming-soon">Coming Soon!</h2>
+                                    <h2 class="project-heading">CanvasGT</h2>
+                                    <h3 class="project-subtitle">UX/UI Design &bull; Branding</h3>
+                                    <p class="text project-text">CanvasGT's flagship product is in progress. Click to learn more about CanvasGT and check back soon for the case study!</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- Cirrus // Mobile and Tablet -->
-                    <div class="grid-two project mobile-tablet">
-                        <div class="project-1">
-                            <a href="project.html">
-                                <img class="border-radius-img container-width-img" src="img/projects/cirrus/cirrus-home-page2.png" alt="Cirrus Home Page">
-                            </a>
+                    <div class="mobile-tablet">
+                        <div class="grid-two project">
+                            <div class="project-1">
+                                <a href="project.html">
+                                    <img class="border-radius-img container-width-img" src="img/projects/cirrus/cirrus-home.png" alt="Cirrus Home Page">
+                                </a>
+                            </div>
+                            <div class="project-2">
+                                <h2 class="heading-3 left-text">Cirrus</h2>
+                                <h3 class="subtitle">Research &bull; UX/UI Design &bull; Branding</h3>
+                                <p class="text">Cirrus connects your cloud drives to simplify finding your documents when you need them.</p>
+                                <a class="button button-left primary text-gray center-text" href="project.html">View Case Study</a>
+                            </div>
                         </div>
-                        <div class="project-2">
-                            <h2 class="heading-3 left-text">Cirrus</h2>
-                            <h3 class="subtitle">UX/UI Design, Branding</h3>
-                            <p class="text">Cirrus connects your cloud drives to simplify finding your documents when you need them.</p>
-                            <a class="button button-left primary text-gray center-text" href="project.html">View Case Study</a>
+
+                        <!-- CanvasGT // Mobile and Tablet -->
+                        <div class="grid-two project">
+                            <div class="project-1">
+                                <a href="https://canvasgt.com/" target="_blank">
+                                    <img class="border-radius-img container-width-img" src="img/projects/canvasgt/canvasgt-dash.png" alt="CanvasGT dashboard">
+                                </a>
+                            </div>
+                            <div class="project-2">
+                                <h2 class="subtitle strong-500">Coming Soon!</h2>
+                                <h2 class="heading-3 left-text">CanvasGT</h2>
+                                <h3 class="subtitle">UX/UI Design &bull; Branding</h3>
+                                <p class="text">CanvasGT's flagship product is in progress. Click to learn more about CanvasGT and check back soon for the case study!</p>
+                                <a class="button button-left primary text-gray center-text" href="https://canvasgt.com/" target="_blank">Learn about CanvasGT</a>
+                            </div>
                         </div>
                     </div>
                 </div>
