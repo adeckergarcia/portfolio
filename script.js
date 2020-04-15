@@ -42,21 +42,43 @@ if (scrollTopButton) {
     };
 }
 
-const overlaySituation = document.getElementById('overlay-situation');
-const thingToOverlay = document.getElementById('thing-to-overlay');
 
-if (overlaySituation && thingToOverlay) {
-    overlaySituation.addEventListener('mouseenter', () => {
-        console.log('I moused over')
-        thingToOverlay.classList.remove('opacity-0')
-        thingToOverlay.classList.add('opacity-1')
+// Cirrus
+const overlayAreaOne = document.getElementById('overlay-area-1');
+const projectOverlayOne = document.getElementById('project-overlay-1');
+
+if (overlayAreaOne && projectOverlayOne) {
+    overlayAreaOne.addEventListener('mouseenter', () => {
+        // console.log('I moused over one')
+        projectOverlayOne.classList.remove('opacity-0')
+        projectOverlayOne.classList.add('opacity-1')
     });
 
-    overlaySituation.addEventListener('mouseleave', () => {
-        console.log('I moused over')
-        thingToOverlay.classList.remove('opacity-1')
-        thingToOverlay.classList.add('opacity-0')
+    overlayAreaOne.addEventListener('mouseleave', () => {
+        // console.log('I moused out one')
+        projectOverlayOne.classList.remove('opacity-1')
+        projectOverlayOne.classList.add('opacity-0')
     });
 } else {
-    console.log('not there');
+    // console.log('not there one');
+}
+
+// CanvasGT
+const overlayAreaTwo = document.getElementById('overlay-area-2');
+const projectOverlayTwo = document.getElementById('project-overlay-2');
+
+if (overlayAreaTwo && projectOverlayTwo) {
+    overlayAreaTwo.addEventListener('mouseenter', () => {
+        // console.log('I moused over two')
+        projectOverlayTwo.classList.remove('opacity-0')
+        projectOverlayTwo.classList.add('opacity-1')
+    });
+
+    overlayAreaTwo.addEventListener('mouseleave', () => {
+        // console.log('I moused out two')
+        projectOverlayTwo.classList.remove('opacity-1')
+        projectOverlayTwo.classList.add('opacity-0')
+    });
+} else {
+    // console.log('not there two');
 }

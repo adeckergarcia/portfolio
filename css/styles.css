@@ -2,6 +2,14 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    font-size: 10px;
+    font-family: 'Heebo', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 300;
+    line-height: 1.4em;
+}
+
 .container {
     margin: 2rem auto;
     width: 100%;
@@ -36,7 +44,7 @@
 
 .menu-link {
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: .2rem;
     padding: 2rem 0;
     text-decoration: none;
@@ -88,6 +96,10 @@
 
 .space-evenly {
     justify-content: space-evenly;
+}
+
+.space-around {
+    justify-content: space-around;
 }
 
 .flex-end {
@@ -153,6 +165,10 @@ span {
     padding-right: 0;
 }
 
+.remove-bottom-padding {
+    padding-bottom: 0;
+}
+
 .remove-left-margin {
     margin-left: 0;
 }
@@ -173,19 +189,7 @@ span {
 }
 
 .spartan {
-    font-family: 'Spartan', sans-serif;
-}
-
-html,
-body {
-    font-size: 10px;
-    font-family: 'Heebo', sans-serif;
-    font-weight: 300;
-    line-height: 1.4em;
-}
-
-.strong-400 {
-    font-weight: 400;
+    font-family: 'Spartan', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .strong-500 {
@@ -217,7 +221,7 @@ p,
 .heading-3,
 .heading-4,
 .heading-5 {
-    font-family: 'Spartan', sans-serif;
+    font-family: 'Spartan', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
     letter-spacing: 0.2rem;
     line-height: 1.3em;
@@ -232,33 +236,31 @@ p,
 }
 
 .project-heading {
-    /* color: white; */
-    font-family: 'Spartan', sans-serif;
+    font-family: 'Spartan', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 2.4rem;
     font-weight: 400;
     letter-spacing: 0.2rem;
     line-height: 1.3em;
     padding-bottom: 0;
-    padding-top: 4rem;
+    padding-top: 3.5rem;
     text-align: center;
     text-transform: uppercase;
 }
 
 .project-subtitle {
-    /* color: white; */
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Heebo', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: .1rem;
     line-height: 1.5em;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
     text-align: center;
     text-transform: uppercase;
 }
 
 .text,
 .subtitle {
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Heebo', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     line-height: 1.5em;
 }
 
@@ -268,9 +270,17 @@ p,
 }
 
 .subtitle {
-    font-weight: 400;
+    /* font-weight: 400; */
     letter-spacing: .1rem;
     padding-bottom: 2rem;
+}
+
+.coming-soon {
+    font-family: 'Heebo', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 5rem;
 }
 
 .special-heading {
@@ -385,12 +395,6 @@ p,
     margin-bottom: 4rem;
     max-width: 60rem;
     width: 100%;
-}
-
-.divider-featured-projects {
-    border-top: 0.5px solid #787878;
-    margin-bottom: 4rem;
-    width: 80%;
 }
 
 .priority-icon {
@@ -828,7 +832,8 @@ img {
 }
 
 .project-1 {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+    margin-top: 8rem;
     grid-row: 1 / 1;
 }
 
@@ -1052,16 +1057,13 @@ img {
     }
     .menu-link {
         font-size: 1.4rem;
-        font-weight: 500;
+        font-weight: 400;
         letter-spacing: .2rem;
         padding: 1rem 0;
         text-decoration: none;
         text-transform: uppercase;
     }
     .menu-link:hover {
-        border-bottom: 2px solid #006676;
-    }
-    .menu-link-active {
         border-bottom: 2px solid #006676;
     }
     .brand-logo-large {
@@ -1212,21 +1214,39 @@ img {
         z-index: 100;
     }
     /* Featured project overlays */
-    .featured-project-container {
-        background-image: url("../img/projects/cirrus/cirrus-home-page2.png");
+    .projects {
+        max-width: 100rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 8rem;
+    }
+    .featured-project-cirrus {
+        background-image: url("../img/projects/cirrus/cirrus-home.png");
         background-position: center center;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         border-radius: 1rem 1rem 0 0;
         display: flex;
-        height: 40rem;
-        max-width: 40rem;
+        height: 30rem;
+        width: 45rem;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+    }
+    .featured-project-canvasgt {
+        background-image: url("../img/projects/canvasgt/canvasgt-dash.png");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 1rem 1rem 0 0;
+        display: flex;
+        height: 30rem;
+        width: 45rem;
         margin-left: auto;
         margin-right: auto;
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
     }
     .project-text {
-        /* color: white; */
         padding-left: 2rem;
         padding-right: 2rem;
         padding-bottom: 4rem;
@@ -1236,10 +1256,12 @@ img {
         display: flex;
         opacity: 0;
         transition: .5s ease;
-        background-color: rgba(214, 225, 229, 1);
-        height: auto;
-        width: 80%;
-        margin: 8.15rem auto;
+        /* background-color: rgba(214, 225, 229, 0.8); */
+        background-color: rgba(255, 255, 255, 0.9);
+        height: 30rem;
+        width: 45rem;
+        margin: 0 auto;
+        /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07); */
     }
 }
 
