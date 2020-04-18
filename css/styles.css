@@ -462,6 +462,10 @@ p,
     background-color: #ECF2EF;
     padding-top: 14rem;
     padding-bottom: 14rem;
+    background-image: url("../img/brand/bg-tl.png"), url("../img/brand/bg-br.png");
+    background-position: top left, bottom right;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .bg-top-project {
@@ -480,6 +484,11 @@ p,
     margin-bottom: 0;
     position: absolute;
     width: 100%;
+    background-image: url("../img/brand/bg2-bl.png"), url("../img/brand/bg2-br.png");
+    background-position: bottom left, bottom right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
 }
 
 
