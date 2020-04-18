@@ -532,6 +532,10 @@ img {
     border: 1px solid #e0e0e0;
 }
 
+.gold-border-img {
+    box-shadow: -1rem -1rem 0rem 0rem #fff, -1rem -1rem 0rem .3rem #ccb884;
+}
+
 .shadow-img {
     box-shadow: .4rem .4rem .4rem #cdcdcd;
 }
