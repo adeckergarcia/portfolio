@@ -69,10 +69,8 @@ body {
     cursor: pointer;
     border: 0;
     z-index: 10;
-}
-
-.burger-menu-icon:focus {
-    /* outline: none; */
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 
@@ -491,7 +489,6 @@ p,
     overflow: auto;
     text-align: center;
     white-space: nowrap;
-    width: 100%;
 }
 
 .horiz-scroll-box::-webkit-scrollbar {
@@ -670,16 +667,12 @@ img {
     font-size: 4rem;
     position: fixed;
     bottom: 4rem;
-    right: 2rem;
+    right: 1rem;
     z-index: 10;
 }
 
 .scroll-top-button:hover {
     color: #c1d3d9;
-}
-
-.scroll-top-button:focus {
-    outline: none;
 }
 
 .hide-scroll-button {
@@ -1038,6 +1031,9 @@ img {
     .menu-links-open {
         display: none;
     }
+    .scroll-top-button {
+        bottom: 4rem;
+    }
     /* Top section margins */
     .bg-top-about {
         margin-top: 10rem;
@@ -1082,10 +1078,8 @@ img {
         border-bottom: 2px solid #006676;
     }
     .brand-logo-large {
-        width: 7rem;
-        padding-top: 2rem;
-        padding-left: 2rem;
-        padding-bottom: 2rem;
+        width: 9rem;
+        padding: 2rem;
         margin: 0;
     }
     .flex-grow-logo {
