@@ -790,6 +790,12 @@ img {
     grid-row: 4 / 4;
 }
 
+.usability {
+    grid-column-gap: 3rem;
+    max-width: 90rem;
+    width: 100%;
+}
+
 .usability-1 {
     grid-row: 1 / 1;
 }
@@ -1142,11 +1148,6 @@ img {
         grid-row: 2 / 2;
         /* margin-bottom: 10rem; */
     }
-    .usability-desktop {
-        grid-column-gap: 3rem;
-        max-width: 90rem;
-        width: 100%;
-    }
     .usability-1 {
         grid-row: 1 / 2;
     }
@@ -1155,12 +1156,6 @@ img {
     }
     .usability-3 {
         grid-row: 1 / 2;
-    }
-    .usability-mobile {
-        grid-column-gap: 3rem;
-        max-width: 70rem;
-        grid-template-columns: 45%;
-        width: 100%;
     }
     .usability-mobile-1 {
         grid-row: 1 / 2;
