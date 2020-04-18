@@ -614,7 +614,7 @@ img {
 }
 
 .button-left {
-    margin: 2rem 0;
+    margin: 2rem auto;
 }
 
 .primary {
@@ -1033,6 +1033,9 @@ img {
     }
     .scroll-top-button {
         bottom: 4rem;
+    }
+    .button-left {
+        margin: 2rem 0;
     }
     /* Top section margins */
     .bg-top-about {
