@@ -267,6 +267,11 @@ p,
     padding-bottom: 3.5rem;
 }
 
+.small-text {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
 .subtitle {
     /* font-weight: 400; */
     letter-spacing: .1rem;
