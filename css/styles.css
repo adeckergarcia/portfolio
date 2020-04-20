@@ -73,6 +73,14 @@ body {
     padding-left: 0px;
 }
 
+.current-nav {
+    border-bottom: 2px solid #006676;
+}
+
+.email-link-icon {
+    font-size: 1.4rem;
+}
+
 
 /* Positioning */
 
