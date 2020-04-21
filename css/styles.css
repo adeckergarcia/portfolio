@@ -465,7 +465,7 @@ p,
 
 .bg-top-home-desktop {
     background-image: url("../img/brand/hero.png");
-    background-size: auto 80rem;
+    background-size: auto 76rem;
     background-repeat: no-repeat;
 }
 
@@ -476,8 +476,8 @@ p,
 
 .bg-featured-projects {
     margin-top: 15rem;
+    margin-bottom: 18rem;
     background-color: white;
-    height: 60rem;
 }
 
 .bg-top-project {
@@ -1017,7 +1017,7 @@ img {
     }
     .text-box-right {
         margin-left: 65%;
-        margin-right: 10%;
+        /* margin-right: 10%; */
     }
     .roles-tools {
         grid-template-columns: 50% 50%;
@@ -1103,8 +1103,8 @@ img {
         max-height: 60rem;
     }
     .text-box-right {
-        padding: 4%;
-        margin-left: 55%;
+        padding: 6%;
+        margin-left: 53%;
         background-color: rgba(255, 255, 255, 0.9);
     }
     .text-triangle {
@@ -1331,7 +1331,7 @@ img {
         font-size: 2.4rem;
     }
     .text-box-right {
-        margin-left: 60%;
+        margin-left: 50%;
         margin-right: 8%;
         background-color: transparent;
     }
@@ -1345,7 +1345,7 @@ img {
         font-size: 2.4rem;
     }
     .text-box-right {
-        margin-left: 52%;
+        margin-left: 50%;
         margin-right: 8%;
         background-color: transparent;
     }
