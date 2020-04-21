@@ -476,8 +476,8 @@ p,
 
 .bg-featured-projects {
     margin-top: 15rem;
-    margin-bottom: 20rem;
     background-color: white;
+    height: 60rem;
 }
 
 .bg-top-project {
