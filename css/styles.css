@@ -15,6 +15,10 @@ body {
     width: 100%;
 }
 
+.inline {
+    display: inline;
+}
+
 
 /* Header area */
 
@@ -65,7 +69,7 @@ body {
 }
 
 .burger-menu-icon {
-    font-size: 3.6rem;
+    font-size: 4.2rem;
     cursor: pointer;
     border: 0;
     z-index: 10;
@@ -75,10 +79,6 @@ body {
 
 .current-nav {
     border-bottom: 2px solid #006676;
-}
-
-.email-link-icon {
-    font-size: 1.4rem;
 }
 
 
@@ -413,22 +413,9 @@ p,
     width: 100%;
 }
 
-.priority-icon {
-    color: #4b4b4b;
-    font-size: 1.5rem;
-    padding-right: 1rem;
-}
-
 .bullet {
     color: #C1D3D9;
     font-size: 1rem;
-    padding-right: 1rem;
-}
-
-.positive-icon,
-.negative-icon {
-    color: #4b4b4b;
-    font-size: 1.5rem;
     padding-right: 1rem;
 }
 
@@ -716,15 +703,40 @@ img {
 
 /* Footer section */
 
-.styled-social-icon {
-    color: #4b4b4b;
-    font-size: 2rem;
-    margin: .75rem;
+.icon {
+    opacity: 0.7;
+}
+
+.vert-align-top {
+    vertical-align: top;
+}
+
+.comp-icon {
+    margin-right: 0.8rem;
+}
+
+.priority-icon {
+    margin-right: 0.8rem;
+}
+
+.social-icon {
+    margin: 1rem;
     padding: 1rem;
 }
 
-.styled-social-icon:hover {
-    color: #00665A;
+.social-icon:hover {
+    background-color: rgba(0, 102, 118, 0.2);
+    border-radius: 50%;
+}
+
+.scroll-icon {
+    background-color: rgba(0, 102, 118, 0.2);
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.scroll-icon:hover {
+    background-color: rgba(0, 102, 118, 0.5);
 }
 
 
